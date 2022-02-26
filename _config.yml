@@ -42,10 +42,10 @@ feedback_email:
 # feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
-# feedback_text: "Need help?"
+feedback_text: "Help, Feedback and Issues"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+feedback_link: "https://github.com/cdaf/help.cdaf.io"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
