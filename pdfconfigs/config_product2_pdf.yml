@@ -4,7 +4,7 @@ baseurl: "/product2-pdf"
 port: 4012
 output: pdf
 product: product2
-print_title: Product 2 documentation
+print_title: Images documentation
 print_subtitle: version 1.0
 output: pdf
 defaults:

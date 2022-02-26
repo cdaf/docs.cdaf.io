@@ -1,18 +1,28 @@
 # docs.cdaf.io
 
-Static Content published via GitHub Pages
+Static Content published via GitHub Pages, based on https://idratherbewriting.com/documentation-theme-jekyll/
 
-# Ruby Development Kit
+# pre-requisites : Ruby Development Kit
 
-Based on https://idratherbewriting.com/documentation-theme-jekyll/
+Based on https://docs.cdaf.io/mydoc_install_jekyll_on_windows.html
 
-In Linux, e.g. WSL install pre-requisites
+## Windows
+
+Download the Ruby+DevKit from http://rubyinstaller.org/downloads/ and run the ridk install with defaults, then, in Administrator console, install Bundler
+
+    gem install bundler
+
+## Linux
+
+In Linux, e.g. WSL
 
     sudo apt-get install ruby-full build-essential
     sudo gem install bundler
 
-From Git workspace
+## Install Dependencies and run Locally
+
+From Git workspace, run the application with live loading (--incremental)
 
     bundle update
-    bundle exec jekyll serve
+    bundle exec jekyll serve --incremental
     
