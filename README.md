@@ -25,4 +25,5 @@ From Git workspace, run the application with live loading (--incremental)
 
     bundle update
     bundle exec jekyll serve --incremental
-    
+
+> Some components, i.e. navbar will not refresh and need to delete the _site directory and rebuild for these

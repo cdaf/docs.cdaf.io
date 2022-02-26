@@ -5,6 +5,10 @@ topnav:
   items:
     - title: News
       url: /news
+    - title: DB Schema
+      url: /p1_landing_page.html
+    - title: Images
+      url: /p2_landing_page.html
 
 #Topnav dropdowns
 topnav_dropdowns:
