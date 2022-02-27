@@ -7,21 +7,11 @@ folder: mydoc
 
 ## Overview
 
-This site provides documentation, training, and other notes for the Jekyll Documentation theme. There's a lot of information about how to do a variety of things here, and it's not all unique to this theme. But by and large, understanding how to do things in Jekyll depends on how your theme is coded. As a result, these additional details are provided.
+This documentation works through increasingly complex use cases. It is discouraged to open the CDAF code and try to determine it's purpose from the code (although it's open source, so you're most welcome). The framework uses a significant amount of dependeny injection, and without an understanding of the purpose, the code will be quite difficult to follow.
 
-The instructions here are geared towards technical writers working on documentation. You may have a team of one or more technical writers working on documentation for multiple projects. You can use this same theme to author all of your documentation for each of your products. The theme is built to accommodate documentation for multiple products on the same site.
+## _Geared for Enterprise DevOps_
 
-## Survey of features
-
-Some of the more prominent features of this theme include the following:
-
-* Bootstrap framework
-* [Navgoco multi-level sidebar](http://www.komposta.net/article/navgoco) for table of contents
-* Ability to specify different sidebars for different products
-* Top navigation bar with drop-down menus
-* Notes, tips, and warning information notes
-* Tags for alternative navigation
-* Advanced landing page layouts from the [Modern Business theme](http://startbootstrap.com/template-overviews/modern-business/).
+The framework origin is within Enterprises, deploying production systems for internal and external consumption. Although CDAF is used for product shipping, i.e. the framework is used to deliver itself, this is not it's primary purpose.
 
 ## Getting started
 
