@@ -1,6 +1,6 @@
 ---
-title: Release notes 6.0
-tags: [getting_started]
+title: Minor Versions
+tags: [releases]
 keywords: release notes, announcements, what's new, new features
 last_updated: February 27, 2022
 summary: "Non-breaking Features and Fixes."

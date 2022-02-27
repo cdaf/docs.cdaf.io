@@ -1,6 +1,6 @@
 ---
 title: Breaking Changes
-tags: [getting_started]
+tags: [releases]
 keywords: release notes, announcements, what's new, new features
 last_updated: February 27, 2022
 summary: "Breaking Release Changes."
