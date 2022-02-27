@@ -7,14 +7,13 @@ permalink: index.html
 summary: What CDAF is and what it is not.
 ---
 
-{% include note.html content="If you know all this and just want to install it, go to <a alt='continuous delivery automation framework' href='http://cdaf.io'>Continuous Delivery Automation Framework</a>" %}
+{% include note.html content="If you know all this and just want to install it, go to Continuous Delivery Automation Framework <a alt='continuous delivery automation framework for Windows' href='https://cdaf.io/windows'>for Windows</a> or <a alt='continuous delivery automation framework for Linux' href='https://cdaf.io/linux'>for Linux</a>."%}
 
-## Build the Theme
-
-Follow these instructions to build the theme.
-
-### 1. Download the theme
-
-First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
+| What CDAF isn't | What CDAF is |
+|-----------------|--------------|
+| The Continuous Delivery Automation Framework Does not give you DevOps | The Continuous Delivery Automation Framework is optionated to help you achieve DevOps principles for Continuous Delivery |
+| CDAF is not a replacement of your CI/CD orchestration tool. | CDAF is loosely coupled, allowing you to test your automation before executing in your orchestration tool. |
+| It does not replace your build tools, such as MSBuild, Maven, Ant, etc. | It provides a execution engine for your build tasks, to cater for logger and error handling. |
+| CDAF does not know how to deploy your application nor<br/>does it know how to manage the configuration. | CDAF provides delivery helpers for common deployment tasks.<br/>A tabular abstraction engine is provided to support tokenised configuration files |
 
 {% include links.html %}
