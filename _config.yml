@@ -45,7 +45,7 @@ feedback_email:
 feedback_text: "Help, Feedback and Issues"
 # if you uncomment the previous line, it changes the Feedback text
 
-feedback_link: "https://github.com/cdaf/help.cdaf.io"
+feedback_link: "https://help.cdaf.io"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
