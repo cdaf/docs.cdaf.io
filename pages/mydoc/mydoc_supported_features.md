@@ -20,10 +20,38 @@ Feature                | Notes
 Properties Abstraction | Tabular representation of properties, providing human readable state and environment variants
 Tasks Executor         | Line by line execution with logging and error handling
 
-## Windows features
+## Execution Engine
 
-Feature | Notes
---------|-----------
-IMGTXT  | Provide an ASCII or grayscale representation of an image file
+The execution engine provides common task operations.
+
+| Keyword | Description                       | Example                         |
+| --------|-----------------------------------|---------------------------------|
+| ASSIGN  | set a variable                    | ASSIGN $test="Hello World"      |
+| CMDTST  | Returns true if command exists    | CMDTST vagrant                  |
+| CMPRSS  | Compress directory to file        | CMPRSS packageName dirName      |
+| CMPRSS  | Compress directory to file        | CMPRSS packageName              |
+| DCMPRS  | Decompress package file           | DCMPRS packageName              |
+| DECRYP  | decrypt file using DSAPI          | DECRYP encrypt.dat              |
+|         | decrypt using PKI or AES key      | DECRYP encrypt.dat $thumbPrint  |
+| DETOKN  | Detokenise file with target prop  | DETOKN token.yml                |
+|         | Detokenise with specific file     | DETOKN token.yml PROPERTY_FILE  |
+|         | Detokenise with encrypted file    | DETOKN token.yml crypt/FIL $key |
+| ELEVAT  | Execute as elevated NT SYSTEM     | ELEVAT "$(pwd)/custom.ps1"      |
+| EXCREM  | Execute Remote Command            | EXCREM hostname                 |
+|         | Execute Remote script             | EXCREM ./capabilities.ps1       |
+| EXITIF  | Exit normally is argument set     | EXITIF $ACTION -eq clean        |
+| INVOKE  | call a custom script              | INVOKE ./script "Hello"         |
+| MAKDIR  | Create a directory and path (opt) | MAKDIR directory/and/path       |
+| PROPLD  | Load properties as variables      | PROPLD prop.file                |
+| REMOVE  | Delete files, including wildcard  | REMOVE *.war                    |
+| REPLAC  | Replace token in file             | REPLAC fileName %token% $value  |
+| VARCHK  | Variable validation check         | VARCHK varlistFileName          |
+| VECOPY  | Verbose copy                      | VECOPY *.war                    |
+
+### Windows Only Execution Operations
+
+| Keyword | Description                       | Example                         |
+| --------|-----------------------------------|---------------------------------|
+| IMGTXT  | Display image file as text        | IMGTXT sample.jpg               |
 
 {% include links.html %}
