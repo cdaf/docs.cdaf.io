@@ -15,9 +15,15 @@ The following table provides a complete list of the capabilites within the Conti
 
 ## Supported features
 
-Feature | Platform | Notes
---------|----------|-----------
-Properties Abstraction | all | Tabular representation of properties, providing human readable state and environment variants
-Tasks Executor | all | Line by line execution with logging and error handling
+Feature                | Notes
+-----------------------|-----------
+Properties Abstraction | Tabular representation of properties, providing human readable state and environment variants
+Tasks Executor         | Line by line execution with logging and error handling
+
+## Windows features
+
+Feature | Notes
+--------|-----------
+IMGTXT  | Provide an ASCII or grayscale representation of an image file
 
 {% include links.html %}
