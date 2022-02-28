@@ -10,4 +10,4 @@ folder: mydoc
 topnav: topnav
 ---
 
-To avoid requests being lost in email, all requests are managed via [GitHub](https://github.com/cdaf/help.cdaf.io/issues) for transparency.
+Please visit our [Help, Feedback and Issues site](https://help.cdaf.io/).
