@@ -11,6 +11,6 @@ summary: What CDAF is and what it is not.
 
 Before jumping in, we recommend reading the [Introduction][mydoc_introduction] to what CDAF is and isn't.
 
-Next [somthing][mydoc_introduction].
+Next [Install for Windows][mydoc_install_cdaf_on_windows] or [Install for Linux][mydoc_install_cdaf_on_linux]
 
 {% include links.html %}

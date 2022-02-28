@@ -11,4 +11,3 @@ folder: mydoc
 See [Linux install](https://cdaf.io/linux)
 
 {% include links.html %}
-
