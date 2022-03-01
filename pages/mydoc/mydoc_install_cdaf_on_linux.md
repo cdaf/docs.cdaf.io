@@ -8,6 +8,14 @@ permalink: mydoc_install_cdaf_on_linux.html
 folder: mydoc
 ---
 
-See [Linux install](https://cdaf.io/linux)
+To install for the local user, recommend placing in your home directory
+
+    cd $HOME
+    curl -s https://cdaf.io/static/app/downloads/cdaf.sh | bash -
+    ./automation/provisioning/addPath.sh "$(pwd)/automation"
+
+Exit your session and re-open to reload the path.
+
+> Next: [seed your solution][mydoc_install_seed]
 
 {% include links.html %}

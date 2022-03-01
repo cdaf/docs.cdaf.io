@@ -64,20 +64,24 @@ entries:
       url: /mydoc_install_cdaf_on_windows.html
       output: web
 
-  - title: Authoring
+    - title: Seed Your Solution
+      url: /mydoc_install_seed.html
+      output: web
+
+  - title: Basics
     output: web
 
     folderitems:
-    - title: Pages
-      url: /mydoc_pages.html
+    - title: Build Tasks
+      url: /mydoc_basics_local_tasks.html
       output: web
 
-    - title: Posts
-      url: /mydoc_posts.html
+    - title: Local Tasks
+      url: /mydoc_basics_local_tasks.html
       output: web
 
-    - title: Lists
-      url: /mydoc_lists.html
+    - title: Remote Tasks
+      url: /mydoc_basics_remote_tasks.html
       output: web
 
     - title: Conditional logic

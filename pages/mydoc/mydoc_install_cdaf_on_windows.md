@@ -7,6 +7,14 @@ sidebar: mydoc_sidebar
 folder: mydoc
 ---
 
-See [Windows install](https://cdaf.io/windows)
+To install for the local user, recommend placing in your home directory
+
+    cd $HOME
+    . { iwr -useb https://cdaf.io/static/app/downloads/cdaf.ps1 } | iex
+    .\automation\provisioning\addPath.ps1 "$(pwd)\automation"
+
+Exit your session and re-open to reload the path.
+
+> Next: [seed your solution][mydoc_install_seed]
 
 {% include links.html %}
