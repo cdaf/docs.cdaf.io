@@ -1,17 +1,16 @@
 ---
 title: Supported features
-tags:
-  - getting_started
+tags: [getting_started, tasks]
 keywords: "features, capabilities, abstraction, obfuscation"
 last_updated: "February 27, 2022"
-summary: "Without context, many of these may seem meaningless."
+summary: "This page provides reference material for Continuous Delivery Automation Framework."
 published: true
 sidebar: mydoc_sidebar
 permalink: mydoc_supported_features.html
 folder: mydoc
 ---
 
-The following table provides a complete list of the capabilites within the Continuous Delivery Automation Framework.
+>  Without context, many of these may seem meaningless, please read the [introduction][mydoc_introduction] first.
 
 ## Supported features
 
@@ -20,7 +19,7 @@ Feature                | Notes
 Properties Abstraction | Tabular representation of properties, providing human readable state and environment variants
 Tasks Executor         | Line by line execution with logging and error handling
 
-## Execution Engine
+## Task Execution Engine
 
 The execution engine provides common task operations.
 
@@ -55,3 +54,13 @@ The execution engine provides common task operations.
 | IMGTXT  | Display image file as text        | IMGTXT sample.jpg               |
 
 {% include links.html %}
+
+### Task Variables
+
+| Variable       | Description                                                   |
+| ---------------|---------------------------------------------------------------|
+| BUILDNUMBER    | The first argument passed, if not passed, this is generated   |
+| ACTION         | The second argument passed, has some hardcoded functions<br/> • clean: only remove temp files<br/> • packageonly: skip any build tasks |
+| AUTOMATIONROOT | The install location of CDAF                                  |
+| SOLUTIONROOT   | The location of your CDAF.solution file                       |
+| SOLUTION       | The solutionName from CDAF.solution file                      |
