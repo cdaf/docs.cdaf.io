@@ -10,9 +10,11 @@ folder: mydoc
 
 To install for the local user, recommend placing in your home directory
 
-    cd $HOME
-    curl -s https://cdaf.io/static/app/downloads/cdaf.sh | bash -
-    ./automation/provisioning/addPath.sh "$(pwd)/automation"
+``` bash
+cd $HOME
+curl -s https://cdaf.io/static/app/downloads/cdaf.sh | bash -
+./automation/provisioning/addPath.sh "$(pwd)/automation"
+```
 
 Exit your session and re-open to reload the path.
 

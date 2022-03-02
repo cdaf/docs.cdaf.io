@@ -73,7 +73,7 @@ entries:
 
     folderitems:
     - title: Build Tasks
-      url: /mydoc_basics_local_tasks.html
+      url: /mydoc_basics_build_tasks.html
       output: web
 
     - title: Local Tasks
@@ -261,6 +261,10 @@ entries:
       - title: Tag archive pages
         output: web
         subfolderitems:
+
+        - title: Tasks
+          url: /tag_tasks.html
+          output: web
 
         - title: Formatting pages
           url: /tag_formatting.html

@@ -24,6 +24,6 @@ In Linux, e.g. WSL
 From Git workspace, run the application with live loading (--incremental)
 
     bundle update
-    bundle exec jekyll serve --incremental
+    rm -rf _site && bundle exec jekyll serve --watch --incremental
 
 > Some components, i.e. navbar will not refresh and need to delete the _site directory and rebuild for these

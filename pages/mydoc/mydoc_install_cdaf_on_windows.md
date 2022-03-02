@@ -9,9 +9,11 @@ folder: mydoc
 
 To install for the local user, recommend placing in your home directory
 
-    cd $HOME
-    . { iwr -useb https://cdaf.io/static/app/downloads/cdaf.ps1 } | iex
-    .\automation\provisioning\addPath.ps1 "$(pwd)\automation"
+``` powershell
+ cd $HOME
+. { iwr -useb https://cdaf.io/static/app/downloads/cdaf.ps1 } | iex
+.\automation\provisioning\addPath.ps1 "$(pwd)\automation"
+```
 
 Exit your session and re-open to reload the path.
 
