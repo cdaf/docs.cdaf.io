@@ -42,6 +42,10 @@ As CDAF is geared toward enterprises, promotion to production is typically gated
 
 Source Control in all the documentation is oriented to Git. There is nothing stopping the use of the framework with other source control system at all because it is loosely coupled, however, there are considerable additional features which work best with Git.
 
+#### Pipeline
+
+The capability of the CI/CD orchestration tools to decouple the CI and CD functions, with the CD operations being completely independent of source control.
+
 > Next: [Getting Started][index].
 
 {% include links.html %}

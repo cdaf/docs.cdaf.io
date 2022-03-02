@@ -76,16 +76,16 @@ entries:
       url: /mydoc_basics_build_tasks.html
       output: web
 
+    - title: Packaging
+      url: /mydoc_basics_packaging.html
+      output: web
+
     - title: Local Tasks
       url: /mydoc_basics_local_tasks.html
       output: web
 
     - title: Remote Tasks
       url: /mydoc_basics_remote_tasks.html
-      output: web
-
-    - title: Packaging
-      url: /mydoc_basics_packaging.html
       output: web
 
     - title: Content reuse

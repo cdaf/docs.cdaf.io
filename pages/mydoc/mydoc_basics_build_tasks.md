@@ -1,7 +1,8 @@
 ---
 title: Build Tasks
-keywords: ci, build, maven, msbuild, dotnet, npm, pip, bundler, gradel, ant, make
 tags: [getting_started, tasks]
+keywords: ci, build, maven, msbuild, dotnet, npm, pip, bundler, gradel, ant, make
+last_updated: March 3, 2022
 summary: "The CI Task, i.e. creating artefacts from code."
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_build_tasks.html
@@ -69,5 +70,7 @@ REPLAC Views\Shared\_Layout.cshtml %productVersion% $productVersion
 Write-Host "[$PROJECT] Build Project ($PROJECT) with specific parameters for web deploy.`n"
 & "$env:MS_BUILD" $PROJECT.csproj /T:Package /P:Configuration=Release /p:buildNumber=$productVersion
 ```
+
+> Next: [Packaing][mydoc_basics_packaging]
 
 {% include links.html %}
