@@ -71,6 +71,17 @@ Write-Host "[$PROJECT] Build Project ($PROJECT) with specific parameters for web
 & "$env:MS_BUILD" $PROJECT.csproj /T:Package /P:Configuration=Release /p:buildNumber=$productVersion
 ```
 
-> Next: [Packaing][mydoc_basics_packaging]
+## Extend the Seeded Solution
+
+Based on the [seeded solution][mydoc_install_seed], add a build.tsk file to the solution root
+
+``` bash
+echo "I'm a build artefact" > fake.artefact
+REFRSH fake.artefact output
+```
+
+Push this to your pipeline and ensure it remains green.
+
+> Next: [Packaging][mydoc_basics_packaging]
 
 {% include links.html %}
