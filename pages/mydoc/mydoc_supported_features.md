@@ -38,7 +38,8 @@ The execution engine provides common task operations.
 | ELEVAT  | Execute as elevated NT SYSTEM     | ELEVAT "$(pwd)/custom.ps1"      |
 | EXCREM  | Execute Remote Command            | EXCREM hostname                 |
 |         | Execute Remote script             | EXCREM ./capabilities.ps1       |
-| EXITIF  | Exit normally is argument set     | EXITIF $ACTION -eq clean        |
+| EXITIF  | Exit normally if argument true    | EXITIF $ACTION                  |
+|         |                                   | EXITIF $ACTION -eq clean        |
 | INVOKE  | call a custom script              | INVOKE ./script "Hello"         |
 | MAKDIR  | Create a directory and path (opt) | MAKDIR directory/and/path       |
 | PROPLD  | Load properties as variables      | PROPLD prop.file                |
@@ -52,6 +53,7 @@ The execution engine provides common task operations.
 | Keyword | Description                       | Example                         |
 | --------|-----------------------------------|---------------------------------|
 | IMGTXT  | Display image file as text        | IMGTXT sample.jpg               |
+| MSTOOL  | Set locations for MSBuild, etc    | MSTOOL                          |
 
 {% include links.html %}
 

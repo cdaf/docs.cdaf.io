@@ -84,8 +84,8 @@ entries:
       url: /mydoc_basics_remote_tasks.html
       output: web
 
-    - title: Conditional logic
-      url: /mydoc_conditional_logic.html
+    - title: Packaging
+      url: /mydoc_basics_packaging.html
       output: web
 
     - title: Content reuse

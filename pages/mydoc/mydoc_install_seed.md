@@ -21,6 +21,13 @@ To seed a new solution, the minimal requirement is a directory with a solution f
     mkdir .cdaf
     cp ~/automation/solution/CDAF.solution .cdaf
 
+The minimum properties are the name of your solution, and the versioning prefix. The resulting artefact will have the build number appended to the release package, e.g. the first build will be 0.1.1, then 0.1.2 and so on. See [packaging][mydoc_basics_packaging].
+
+``` properties
+solutionName=mycoolproduct
+artifactPrefix=0.1
+```
+
 ### Continuous Integration (CI)
 
 With CDAF installed on your path, you can now test the solution by running linux
