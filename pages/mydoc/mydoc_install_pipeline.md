@@ -179,6 +179,6 @@ For Azure DevOps/Server (formerly Visual Studio Team Services (VSTS)/Team Founda
       For re-release    : $(Release.DefinitionName)-$(Build.BuildNumber)-$(rev:r)
 ```
 
-> Next: CDAF [basics, build task][mydoc_basics_build_tasks]
+> Next: [Configuration Management][mydoc_configuration_management]
 
 {% include links.html %}

@@ -72,8 +72,8 @@ entries:
     output: web
 
     folderitems:
-    - title: Configuration Mnagement
-      url: /mydoc_configuraiton_management.html
+    - title: Configuration Management
+      url: /mydoc_configuration_management.html
       output: web
 
     - title: Build Tasks
@@ -93,7 +93,7 @@ entries:
       output: web
 
     - title: Content reuse
-      url: /mydoc_content_reuse.html
+      url: /mydoc_basics_sensitive_data_strategies.html
       output: web
 
     - title: WebStorm editor tips
