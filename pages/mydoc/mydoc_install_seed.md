@@ -68,8 +68,6 @@ You will the same steps executed above, but with a wrapper, it is this wrapper t
 
 Now that you have the bare minimum, appply it to your CI/CD toolset immediately. We want to have a green pipeline from the start to trap any problems we may introduce in subsequent steps
 
-> TODO: guidance on samples
-
-> Next: CDAF [basics, build task][mydoc_basics_build_tasks]
+> Next: Install CDAF [to your pipeline][mydoc_install_pipeline]
 
 {% include links.html %}

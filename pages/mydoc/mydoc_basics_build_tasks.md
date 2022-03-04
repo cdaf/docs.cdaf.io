@@ -12,7 +12,7 @@ permalink: mydoc_basics_build_tasks.html
 
 Continuous Integration (CI) is the objective of bringing code branches together and building them to produce a consolidated artefact. This shift-left approach ensures the efforts of multiple contributors are combined and tested regularly. The testing within CI typically starts with unit testing, and that should be included in the build task. For some ecosystems this is an implicit or parameterised part of the build command, others, it's separate command.
 
-### How dows it work
+### How does it work
 
 CDAF will process all build.tsk files in the solution root, then all the build.tsk files found in one level of sub-directories.
 
