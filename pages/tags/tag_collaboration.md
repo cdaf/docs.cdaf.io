@@ -1,8 +1,8 @@
 ---
-title: "Collaboration pages"
-tagName: collaboration
+title: "Agent/Runner"
+tagName: agent
 search: exclude
-permalink: tag_collaboration.html
+permalink: tag_agent.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

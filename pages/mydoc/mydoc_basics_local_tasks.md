@@ -1,47 +1,28 @@
 ---
 title: Local Tasks
-tags: [getting_started, formatting, content_types]
-keywords: posts, blog, news, authoring, exclusion, frontmatter
-last_updated: Feb 25, 2016
-summary: "You can use posts when you want to create blogs or news type of content."
+tags: [getting_started, tasks]
+keywords: agent, runner, server
+last_updated: Mar 4, 2022
+summary: "Tasks run in a local context."
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_local_tasks.html
 folder: mydoc
 ---
 
-## About posts
+Local Tasks use the same execution engined as [build tasks][mydoc_basics_build_tasks], but at deploy time, rather than build time. Local Tasks are executed in the local context of the host/server. Local Tasks are suited to situations where the agent is installed on the server where tasks are to be performed, or the server that the agent is installed has the tools required to perform tasks on a remote target, i.e. a service offering with a command line interface, such as Kubernettes, Azure or AWS.
 
-Posts are typically used for blogs or other news information because they contain a date and are sorted in reverse chronological order.
+> The CDAF capabilities with [containers][mydoc_docker_containers] cater for more sophisticated uses in the local context and the alternative [container tasks][mydoc_container_tasks] execution approach.
 
-You create a post by adding a file in the \_posts folder that is named yyyy-mm-dddd-permalink.md, which might be 2016-02-25-my-latest-updates.md. You can use any number of subfolders here that you want.
+The local task context one of the most important features for repeatable release deployment is the ability to detokenise files. Tokenised configuration files reduce the risk of structural drift of settings files in source control, while making the release targets scalable, i.e. making it easier to add another test or user acceptance environment.
 
-Posts use the post.html layout in the \_layouts folder when you are viewing the post.
+The environment which is passed to the relase package is the default file name to be used for detokenisation.
 
-The news.html file in the root directory shows a reverse chronological listing of the 10 latest posts
+``` powershell
+Write-Host "Detokenise the settings for this environment`n"
+DETOKN aspdotnet.SetParameters.xml
 
-## Allowed frontmatter
-
-The frontmatter you can use with posts is as follows:
-
-```yaml
----
-title: My sample post
-tags: content_types
-keywords: pages, authoring, exclusion, frontmatter
-sidebar: mydoc_sidebar
-permalink: mydoc_pages.html
-summary: "This is some summary frontmatter for my sample post."
----
+Write-Host "Use Web Deploy to deploy the Aware application`n"
+.\aspdotnet.deploy.cmd /Y /M:localhost
 ```
-
-| Frontmatter | Required? | Description |
-|-------------|-------------|-------------|
-| **title** | Required | The title for the page |
-| **tags** | Optional | Tags for the page. Make all tags single words, with underscores if needed. Separate them with commas. Enclose the whole list within brackets. Also, note that tags must be added to \_data/tags_doc.yml to be allowed entrance into the page. This prevents tags from becoming somewhat random and unstructured. You must create a tag page for each one of your tags following the sample pattern in the tabs folder. (Tag pages aren't automatically created.)  |
-| **keywords** | Optional | Synonyms and other keywords for the page. This information gets stuffed into the page's metadata to increase SEO. The user won't see the keywords, but if you search for one of the keywords, it will be picked up by the search engine.  |
-| **sidebar** | Required | Refers to the sidebar data file for this page. Don't include the ".yml" file extension for the sidebar &mdash; just provide the file name. If no sidebar is specified, this value will inherit the `default` property set in your \_config.yml file for the page's frontmatter. |
-| **permalink**| Required | This theme uses permalinks to facilitate the linking. You specify the permalink want for the page, and the \_site output will put the page into the root directory when you publish. Follow the same convention here as you do with page permalinks -- list the file name followed by the .html extension. |
-| **summary** | Optional | A 1-2 word sentence summarizing the content on the page. This gets formatted into the summary section in the page layout. Adding summaries is a key way to make your content more scannable by users (check out [Jakob Nielsen's site](http://www.nngroup.com/articles/corporate-blogs-front-page-structure/) for a great example of page summaries.) The only drawback with summaries is that you can't use variables in them. |
-
 
 {% include links.html %}

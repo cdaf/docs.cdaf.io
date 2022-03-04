@@ -72,6 +72,10 @@ entries:
     output: web
 
     folderitems:
+    - title: Configuration Mnagement
+      url: /mydoc_configuraiton_management.html
+      output: web
+
     - title: Build Tasks
       url: /mydoc_basics_build_tasks.html
       output: web
@@ -90,10 +94,6 @@ entries:
 
     - title: Content reuse
       url: /mydoc_content_reuse.html
-      output: web
-
-    - title: Collections
-      url: /mydoc_collections.html
       output: web
 
     - title: WebStorm editor tips
@@ -128,6 +128,10 @@ entries:
     output: web
 
     folderitems:
+    - title: CDAF, Docker & Containers
+      url: /mydoc_docker_containers.html
+      output: web
+
     - title: containerBuild
       url: /mydoc_adding_tooltips.html
       output: web
@@ -140,12 +144,8 @@ entries:
       url: /mydoc_cdaf_images.html
       output: web
 
-    - title: Images
-      url: /mydoc_images.html
-      output: web
-
-    - title: Code samples
-      url: /mydoc_code_samples.html
+    - title: Container Tasks
+      url: /mydoc_container_tasks.html
       output: web
 
     - title: Labels
@@ -286,8 +286,8 @@ entries:
           url: /tag_special_layouts.html
           output: web
 
-        - title: Collaboration pages
-          url: /tag_collaboration.html
+        - title: Agent/Runner
+          url: /tag_agent.html
           output: web
 
         - title: Troubleshooting pages
