@@ -2,7 +2,7 @@
 title: Install Pipeline
 tags: [getting_started]
 keywords: linux, bash, windows, powershell, cmd, command
-summary: "Verify your new Solution in your CI/CD Pipeline"
+summary: Verify your new Solution in your CI/CD Pipeline
 sidebar: mydoc_sidebar
 permalink: mydoc_install_pipeline.html
 folder: mydoc

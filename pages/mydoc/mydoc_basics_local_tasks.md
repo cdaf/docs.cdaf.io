@@ -3,7 +3,7 @@ title: Local Tasks
 tags: [getting_started, tasks]
 keywords: agent, runner, server
 last_updated: Mar 4, 2022
-summary: "Tasks run in a local context."
+summary: Tasks run in a local context.
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_local_tasks.html
 folder: mydoc

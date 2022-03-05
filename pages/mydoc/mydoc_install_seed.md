@@ -2,7 +2,7 @@
 title: Seed Solution
 tags: [getting_started]
 keywords: linux, bash, windows, powershell, cmd, command
-summary: "Preparing a new Solution for CDAF"
+summary: Preparing a new Solution for CDAF
 sidebar: mydoc_sidebar
 permalink: mydoc_install_seed.html
 folder: mydoc

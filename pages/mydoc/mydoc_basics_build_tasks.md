@@ -3,7 +3,7 @@ title: Build Tasks
 tags: [getting_started, tasks]
 keywords: ci, build, maven, msbuild, dotnet, npm, pip, bundler, gradel, ant, make
 last_updated: March 3, 2022
-summary: "The CI Task, i.e. creating artefacts from code."
+summary: The CI Task, i.e. creating artefacts from code.
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_build_tasks.html
 ---

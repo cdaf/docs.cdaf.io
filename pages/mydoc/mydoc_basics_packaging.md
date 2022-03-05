@@ -3,7 +3,7 @@ title: Packaging
 tags: [getting_started, tasks]
 keywords: artefact, artifact, package, zip, gzip, tar, base64
 last_updated: March 3, 2022
-summary: "Artefact retention within release package."
+summary: Artefact retention within release package.
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_packaging.html
 folder: mydoc

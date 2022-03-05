@@ -92,7 +92,7 @@ entries:
       url: /mydoc_basics_remote_tasks.html
       output: web
 
-    - title: Content reuse
+    - title: Sensistive Data Strategies
       url: /mydoc_basics_sensitive_data_strategies.html
       output: web
 
@@ -240,13 +240,13 @@ entries:
       url: /mydoc_shuffle.html
       output: web
 
-  - title: Troubleshooting
+  - title: Legacy Features
     output: web
 
     folderitems:
 
     - title: Troubleshooting
-      url: /mydoc_troubleshooting.html
+      url: /mydoc_legacy_features.html
       output: web
 
   - title: Reference Material
