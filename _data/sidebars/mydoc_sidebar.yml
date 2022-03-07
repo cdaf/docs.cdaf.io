@@ -133,11 +133,11 @@ entries:
       output: web
 
     - title: containerBuild
-      url: /mydoc_adding_tooltips.html
+      url: /mydoc_container_build.html
       output: web
 
     - title: containerDeploy
-      url: /mydoc_alerts.html
+      url: /mydoc_container_deploy.html
       output: web
 
     - title: CDAF Images

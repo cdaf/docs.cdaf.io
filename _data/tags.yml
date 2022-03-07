@@ -2,17 +2,18 @@
 # If you are using the createtag script, don't leave a blank line at the end of this file.
 # In other words, the last line must be the last tag in the allowed-tags list.
 allowed-tags:
+  - containers
   - getting_started
-  - tag_agent
   - content_types
-  - navigation
   - formatting
+  - mobile
+  - navigation
+  - news
   - publishing
   - single_sourcing
   - special_layouts
-  - news
-  - troubleshooting
-  - mobile
+  - tag_agent
   - tasks
+  - troubleshooting
 
 # Copyright 2021 Google LLC
