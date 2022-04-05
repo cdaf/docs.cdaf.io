@@ -1,6 +1,6 @@
 # docs.cdaf.io
 
-Static Content published via GitHub Pages, based on https://idratherbewriting.com/documentation-theme-jekyll/
+Static Content published via GitHub Pages, based on https://idratherbewriting.com/documentation-theme-jekyll/. For guidance on editing content see the [HDC Wiki](https://wiki.hdc.company/x/QwF3B).
 
 # pre-requisites : Ruby Development Kit
 
