@@ -13,7 +13,7 @@ This documentation works through increasingly complex use cases. It is discourag
 |-----------------|--------------|
 | The Continuous Delivery Automation Framework Does not give you DevOps | The Continuous Delivery Automation Framework is optionated to help you achieve DevOps principles for Continuous Delivery |
 | CDAF is not a replacement of your CI/CD orchestration tool. | CDAF is loosely coupled, allowing you to test your automation before executing in your orchestration tool. |
-| It does not replace your build tools, such as MSBuild, Maven, Ant, etc. | It provides a execution engine for your build tasks, to cater for logger and error handling. |
+| It does not replace your build tools, such as MSBuild, Maven, Ant, etc. | It provides a execution engine for your build tasks, to cater for loggingm, error and exception handling. |
 | CDAF does not know how to deploy your application nor;<br/>does it know how to manage the configuration. | CDAF provides delivery helpers for common deployment tasks.<br/>A tabular abstraction engine is provided to support tokenised configuration files |
 
 {% include note.html content="If you know all this and just want to install it, go to [Install for Windows][mydoc_install_cdaf_on_windows] or [Install for Linux][mydoc_install_cdaf_on_linux]."%}
