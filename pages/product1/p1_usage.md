@@ -25,6 +25,8 @@ In this example, the scripts are located in this directory Database/scripts
 
     00.00.00.003.sql
     00.00.00.004.sql
+    00.00.00.006.sql
+    00.00.00.007.sql
 
 To make these available at deploy time the storeFor definition includes all the scripts in this directory
 
@@ -32,7 +34,7 @@ To make these available at deploy time the storeFor definition includes all the 
 
 ### Windows
 
-Required argument is the Database name, host, user and password are optional.
+Required argument is the Database name, host, user and password are optional. The current version is reported, if the utility has never been run, the version table will be created. All subsequent scripts are run, the version is updated and reported.
 
 ```
 .\Database.exe test
@@ -41,6 +43,11 @@ Host not supplied, using localhost
 Script URL not supplied, using ./Database/scripts/
 User name not supplied, will attempt windows integrated authentication
 Current Database version : 00.00.00.006
+
+./Database/scripts/00.00.00.007.sql
+Script executed successfuly
+
+Database version now : 00.00.00.007
 ```
 
 
