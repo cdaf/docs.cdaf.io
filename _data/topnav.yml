@@ -16,7 +16,7 @@ topnav_dropdowns:
   folders:
     - title: Products
       folderitems:
-        - title: Jekyll Documentation Theme
+        - title: Continuous Delivery Automation Framework
           url: /mydoc_introduction.html
         - title: DB Schema
           url: /p1_landing_page.html
