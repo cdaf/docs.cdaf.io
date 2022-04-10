@@ -40,12 +40,12 @@ entries:
     output: web
     folderitems:
 
-    - title: Breaking Changes
-      url: /mydoc_release_breaking_changes.html
-      output: web
-
     - title: Minor Releases
       url: /mydoc_release_minor_versions.html
+      output: web
+
+    - title: Breaking Changes
+      url: /mydoc_release_breaking_changes.html
       output: web
 
   - title: Installation
@@ -96,14 +96,6 @@ entries:
       url: /mydoc_basics_sensitive_data_strategies.html
       output: web
 
-    - title: WebStorm editor tips
-      url: /mydoc_webstorm_text_editor.html
-      output: web
-
-    - title: Atom editor tips
-      url: /mydoc_atom_text_editor.html
-      output: web
-
   - title: Containers
     output: web
 
@@ -126,39 +118,6 @@ entries:
 
     - title: Container Tasks
       url: /mydoc_container_tasks.html
-      output: web
-
-    - title: Labels
-      url: /mydoc_labels.html
-      output: web
-
-    - title: Links
-      url: /mydoc_hyperlinks.html
-      output: web
-
-    - title: Navtabs
-      url: /mydoc_navtabs.html
-      output: web
-
-    - title: Tables
-      url: /mydoc_tables.html
-      output: web
-
-    - title: Syntax highlighting
-      url: /mydoc_syntax_highlighting.html
-      output: web
-
-    - title: Workflow maps
-      url: /mydoc_workflow_maps.html
-      output: web
-
-  - title: Legacy Features
-    output: web
-
-    folderitems:
-
-    - title: Troubleshooting
-      url: /mydoc_legacy_features.html
       output: web
 
   - title: Reference Material
