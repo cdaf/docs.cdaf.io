@@ -14,9 +14,9 @@ Download the Ruby+DevKit from http://rubyinstaller.org/downloads/ and run the ri
 
 ## Linux
 
-In Linux, e.g. WSL
+In Ubuntu, e.g. WSL
 
-    sudo apt-get install ruby-full build-essential
+    sudo apt update && sudo apt -y install ruby-full build-essential
     sudo gem install bundler
 
 ## Install Dependencies and run Locally
