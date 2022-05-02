@@ -84,6 +84,10 @@ entries:
       url: /mydoc_basics_packaging.html
       output: web
 
+    - title: Execution Engine
+      url: /mydoc_basics_execution_engine.html
+      output: web
+
     - title: Local Tasks
       url: /mydoc_basics_local_tasks.html
       output: web
