@@ -23,6 +23,6 @@ The following environment
 | CDAF_OVERRIDE_TOKEN       | Default marker for DETOKN or PROPLD in [Execution Engine][mydoc_execution_engine] is %, i.e. %key_name%, the markers can be changed using this environment variable
 | CDAF_SKIP_CONTAINER_BUILD | [containerBuild][mydoc_container_build] will not be performed if this environment variable is set to any value
 
-> Next: [Sensistive Data Strategies][mydoc_sensitive_data_strategies]
+> Next: [Sensitive Data Strategies][mydoc_sensitive_data_strategies]
 
 {% include links.html %}
