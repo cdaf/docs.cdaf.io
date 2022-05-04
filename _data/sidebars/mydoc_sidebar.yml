@@ -109,7 +109,7 @@ entries:
       output: web
 
     - title: Sensistive Data Strategies
-      url: /mydoc_basics_sensitive_data_strategies.html
+      url: /mydoc_sensitive_data_strategies.html
       output: web
 
     - title: Legacy Features

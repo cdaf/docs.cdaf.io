@@ -26,7 +26,7 @@ local    UAT     db2.nonprod.local   $db2Pass
 local    PROD    cluster.prod.local  $prodPass
 ```
 
-> Configuration Management files should never container sensitive data or secrets. These are supplied as variables, see more on [sensitive data strategies][mydoc_basics_sensitive_data_strategies].
+> Configuration Management files should never container sensitive data or secrets. These are supplied as variables, see more on [sensitive data strategies][mydoc_sensitive_data_strategies].
 
 The configuration managment tables can be any file name with .cm extension, in your solution root. All .cm files are processed prior to the [build task][mydoc_basics_build_tasks] in the CI process.
 

@@ -1,11 +1,11 @@
 ---
 title: Sensitive Data Strategies
-tags: [getting_started, tasks]
+tags: [feature_config]
 keywords: configuration management, environment variables, properties, settings, tokenisation
 last_updated: July 3, 2016
 summary: 
 sidebar: mydoc_sidebar
-permalink: mydoc_basics_sensitive_data_strategies.html
+permalink: mydoc_sensitive_data_strategies.html
 folder: mydoc
 ---
 
