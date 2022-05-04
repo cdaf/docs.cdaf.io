@@ -2,8 +2,8 @@
 
 
 entries:
-- title: Sidebar
-  product: Product1
+- title: DB Schema
+  product: DB Schema
   version: 1.0
   folders:
 

@@ -6,6 +6,10 @@ last_updated: March 3, 2022
 summary: The CI Task, i.e. creating artefacts from code.
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_build_tasks.html
+simple_map: true
+map_name: usermap
+box_number: 2
+folder: mydoc
 ---
 
 ## Continuous Integration

@@ -7,6 +7,10 @@ summary: Artefact retention within release package.
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_packaging.html
 folder: mydoc
+simple_map: true
+map_name: usermap
+box_number: 3
+folder: mydoc
 ---
 
 # Build-Once/Deploy-Many
@@ -41,6 +45,6 @@ Files placed in the following locations within your solution directot=ry will al
 
 An explanation of the local and container extensions will be explained in following sections.
 
-> Next: [Execution Engine][mydoc_basics_execution_engine]
+> Next: [Local Tasks][mydoc_basics_local_tasks]
 
 {% include links.html %}

@@ -7,6 +7,10 @@ summary: Tasks run in a remote context. <br/><br/>This approach is less common w
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_remote_tasks.html
 folder: mydoc
+simple_map: true
+map_name: usermap
+box_number: 5
+folder: mydoc
 ---
 
 Like Local Tasks, Remote Tasks use the same execution engined as [build tasks][mydoc_basics_build_tasks], but at deploy time, rather than build time. Remote Tasks are executed in the local context of a *remote* host/server. Remote Tasks are suited to situations where the agent is *not* installed on the server where tasks are to be performed and instead the deployment is pushed, i.e. to an application server in the DMZ which can only be accessed by Remote PowerShell or SSH.
@@ -43,6 +47,6 @@ remote   VAGRANT    windows.mshome.net  windows-1\adminuser  $env:CDAF_PS_USERPA
 
 For other (discouraged) mechanisms see [Legacy Features][mydoc_legacy_features].
 
-> Next: [Environment Variables][mydoc_basics_environment_variables]
+> Next: [Execution Engine][mydoc_basics_execution_engine]
 
 {% include links.html %}

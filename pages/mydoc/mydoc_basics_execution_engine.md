@@ -70,6 +70,6 @@ These are automatically set at execution start-up
 | $TMPDIR         | Automatically set to the temp dir
 | $WORKSPACE      | The working directory at start-up
 
-> Next: [Local Tasks][mydoc_basics_local_tasks]
+> Next: [Environment Variables][mydoc_basics_environment_variables]
 
 {% include links.html %}

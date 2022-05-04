@@ -7,6 +7,10 @@ summary: Configuration Management is the principle of controlling the properties
 sidebar: mydoc_sidebar
 permalink: mydoc_configuration_management.html
 folder: mydoc
+simple_map: true
+map_name: usermap
+box_number: 1
+folder: mydoc
 ---
 
 CDAF origin was to ensure consistent configuration of servers accross environments, based on a source of truth. The partner construct to this approach is tokenisation, i.e. a way of abstracting environment variations away from the syntax of the consuming application.

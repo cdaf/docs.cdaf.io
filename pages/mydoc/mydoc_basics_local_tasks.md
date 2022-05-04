@@ -7,6 +7,10 @@ summary: Tasks run in a local context.
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_local_tasks.html
 folder: mydoc
+simple_map: true
+map_name: usermap
+box_number: 4
+folder: mydoc
 ---
 
 Local Tasks use the same execution engined as [build tasks][mydoc_basics_build_tasks], but at deploy time, rather than build time. Local Tasks are executed in the local context of the host/server. Local Tasks are suited to situations where the agent is installed on the server where tasks are to be performed, or the server that the agent is installed has the tools required to perform tasks on a remote target, i.e. a service offering with a command line interface, such as Kubernettes, Azure or AWS.
