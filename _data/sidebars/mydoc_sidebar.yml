@@ -73,7 +73,7 @@ entries:
 
     folderitems:
     - title: Configuration Management
-      url: /mydoc_configuration_management.html
+      url: /mydoc_basics_configuration_management.html
       output: web
 
     - title: Build Tasks
@@ -97,15 +97,23 @@ entries:
 
     folderitems:
     - title: Execution Engine
-      url: /mydoc_basics_execution_engine.html
+      url: /mydoc_execution_engine.html
       output: web
 
     - title: Environment Variables
-      url: /mydoc_basics_environment_variables.html
+      url: /mydoc_environment_variables.html
+      output: web
+
+    - title: Solution Properties
+      url: /mydoc_solution_properties.html
       output: web
 
     - title: Sensistive Data Strategies
       url: /mydoc_basics_sensitive_data_strategies.html
+      output: web
+
+    - title: Legacy Features
+      url: /mydoc_mydoc_legacy_features.html
       output: web
 
   - title: Containers

@@ -5,7 +5,7 @@ keywords: ci, cd, make
 last_updated: May 5, 2022
 summary: Line-by-line Execution.
 sidebar: mydoc_sidebar
-permalink: mydoc_basics_execution_engine.html
+permalink: mydoc_execution_engine.html
 ---
 
 ## Motivation
@@ -70,6 +70,6 @@ These are automatically set at execution start-up
 | $TMPDIR         | Automatically set to the temp dir
 | $WORKSPACE      | The working directory at start-up
 
-> Next: [Environment Variables][mydoc_basics_environment_variables]
+> Next: [Environment Variables][mydoc_environment_variables]
 
 {% include links.html %}

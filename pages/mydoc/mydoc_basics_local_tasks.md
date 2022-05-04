@@ -33,7 +33,7 @@ Write-Host "Use Web Deploy to deploy the Aware application`n"
 
 The local task context one of the most important features for repeatable release deployment is the ability to detokenise files. Tokenised configuration files reduce the risk of structural drift of settings files in source control, while making the release targets scalable, i.e. making it easier to add another test or user acceptance environment.
 
-The environment which is passed to the relase package is used to match to the ``target`` defined in [configuration management][mydoc_configuration_management] for detokenisation. The properties file before the DETOKN operation
+The environment which is passed to the relase package is used to match to the ``target`` defined in [configuration management][mydoc_basics_configuration_management] for detokenisation. The properties file before the DETOKN operation
 
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>

@@ -45,8 +45,6 @@ context  target     deployHost          remoteUser           remotePass
 remote   VAGRANT    windows.mshome.net  windows-1\adminuser  $env:CDAF_PS_USERPASS
 ```
 
-For other (discouraged) mechanisms see [Legacy Features][mydoc_legacy_features].
-
-> Next: [Execution Engine][mydoc_basics_execution_engine]
+> Next: [Execution Engine][mydoc_execution_engine]
 
 {% include links.html %}

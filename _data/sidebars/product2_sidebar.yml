@@ -31,6 +31,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Vagrant Atlas
+      url: /p2_vagrant.html
+      output: web, pdf
+
     - title: Sample 1
       url: /p2_sample1.html
       output: web, pdf

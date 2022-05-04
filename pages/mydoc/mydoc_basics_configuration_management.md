@@ -5,7 +5,7 @@ keywords: configuration management, name value, properties, settings, tokenisati
 last_updated: Mar 4, 2022
 summary: Configuration Management is the principle of controlling the properties and settings of environments from source control, to provide transparency and traceability of current state and changes over time.
 sidebar: mydoc_sidebar
-permalink: mydoc_configuration_management.html
+permalink: mydoc_basics_configuration_management.html
 folder: mydoc
 simple_map: true
 map_name: usermap

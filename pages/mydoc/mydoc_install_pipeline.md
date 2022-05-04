@@ -179,6 +179,6 @@ For Azure DevOps/Server (formerly Visual Studio Team Services (VSTS)/Team Founda
       For re-release    : $(Release.DefinitionName)-$(Build.BuildNumber)-$(rev:r)
 ```
 
-> Next: [Configuration Management][mydoc_configuration_management]
+> Next: [Configuration Management][mydoc_basics_configuration_management]
 
 {% include links.html %}
