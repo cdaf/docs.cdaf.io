@@ -96,6 +96,10 @@ entries:
       url: /mydoc_basics_remote_tasks.html
       output: web
 
+    - title: Environment Variables
+      url: /mydoc_basics_environment_variables.html
+      output: web
+
     - title: Sensistive Data Strategies
       url: /mydoc_basics_sensitive_data_strategies.html
       output: web

@@ -43,6 +43,6 @@ remote   VAGRANT    windows.mshome.net  windows-1\adminuser  $env:CDAF_PS_USERPA
 
 For other (discouraged) mechanisms see [Legacy Features][mydoc_legacy_features].
 
-> Next: [Sensistive Data Strategies][mydoc_basics_sensitive_data_strategies]
+> Next: [Environment Variables][mydoc_basics_environment_variables]
 
 {% include links.html %}
