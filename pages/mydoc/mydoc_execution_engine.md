@@ -74,6 +74,6 @@ These are automatically set at execution start-up
 | $TMPDIR         | Automatically set to the temp dir
 | $WORKSPACE      | The working directory at start-up
 
-> Next: [Environment Variables][mydoc_environment_variables]
+> Next: [Solution Properties][mydoc_solution_properties]
 
 {% include links.html %}
