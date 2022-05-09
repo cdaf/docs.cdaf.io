@@ -63,7 +63,7 @@ Notes on EXCREM use, the properties are similar to those used for remote tasks, 
   remCred=NOT_SUPPLIED
   remThb=NOT_SUPPLIED
 
-# Runtime variables
+# Build-time Variables
 
 These are automatically set at execution start-up
 
@@ -71,8 +71,10 @@ These are automatically set at execution start-up
 |-----------------|----------------------------------
 | $AUTOMATIONROOT | The directory of the Continuous Delivery Automation Framework
 | $SOLUTIONROOT   | The solution directory identified by CDAF.solution file
+| BUILDNUMBER     | The first argument passed, if not passed, this is generated
+| ACTION          | The second argument passed, has some hardcoded functions<br/> • clean: only remove temp files<br/> • packageonly: skip any build tasks
 | $TMPDIR         | Automatically set to the temp dir
-| $WORKSPACE      | The working directory at start-up
+| $WORKSPACE      | The working directory at execution start-up
 
 > Next: [Solution Properties][mydoc_solution_properties]
 

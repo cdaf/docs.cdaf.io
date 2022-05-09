@@ -10,4 +10,4 @@ folder: mydoc
 topnav: topnav
 ---
 
-Please visit our [Help, Feedback and Issues site](https://help.cdaf.io/).
+Please visit our Help, Feedback and Issues on GitHub [for Windows](https://github.com/cdaf/windows/issues) or [for Windows](https://github.com/cdaf/linux/issues).
