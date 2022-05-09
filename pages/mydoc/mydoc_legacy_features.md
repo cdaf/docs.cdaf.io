@@ -5,7 +5,7 @@ keywords: local testing, loop-back
 last_updated: May 4, 2022
 summary: 
 sidebar: mydoc_sidebar
-permalink: mydoc_mydoc_legacy_features.html
+permalink: mydoc_legacy_features.html
 folder: mydoc
 ---
 
