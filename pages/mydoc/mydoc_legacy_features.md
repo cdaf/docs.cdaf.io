@@ -1,9 +1,9 @@
 ---
 title: Legacy Features
-tags: [getting_started, tasks]
+tags: [feature_configuration, tasks]
 keywords: local testing, loop-back
 last_updated: May 4, 2022
-summary: 
+summary: Supported features of CDAF, whos use is discouraged
 sidebar: mydoc_sidebar
 permalink: mydoc_legacy_features.html
 folder: mydoc
@@ -22,6 +22,5 @@ This approach uses the local host for both target (CD) and build (CI) execution.
 
     .\automation\provisioning\trustedHosts.ps1 *
     .\automation\provisioning\CredSSP.ps1 client
-
 
 {% include links.html %}

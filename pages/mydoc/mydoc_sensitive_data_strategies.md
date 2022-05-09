@@ -1,6 +1,6 @@
 ---
 title: Sensitive Data Strategies
-tags: [feature_config]
+tags: [feature_configuration]
 keywords: configuration management, environment variables, properties, settings, tokenisation
 last_updated: July 3, 2016
 summary: 

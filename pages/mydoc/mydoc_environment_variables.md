@@ -1,6 +1,6 @@
 ---
 title: Environment Variables
-tags: [feature_config]
+tags: [feature_configuration]
 keywords: controls
 last_updated: May 4, 2022
 summary: CDAF Control Variables.

@@ -3,7 +3,7 @@ title: Remote Tasks
 tags: [getting_started, tasks]
 keywords: agent, runner, server
 last_updated: Mar 5, 2022
-summary: Tasks run in a remote context. <br/><br/>This approach is less common with the license barriers to installing deployment agents, and the client oriented nature of modern agents, making the need for "push deployments" less common.
+summary: Tasks run in a remote context. This approach is less common with the license barriers to installing deployment agents, and the client oriented nature of modern agents, making the need for push deployments less common.
 sidebar: mydoc_sidebar
 permalink: mydoc_basics_remote_tasks.html
 folder: mydoc

@@ -161,4 +161,8 @@ entries:
           url: /tag_tasks.html
           output: web
 
+        - title: Feature Configuration
+          url: /tag_feature_configuration.html
+          output: web
+
 # Copyright 2021 Google LLC
