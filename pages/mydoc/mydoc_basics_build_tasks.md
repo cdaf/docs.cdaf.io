@@ -24,7 +24,7 @@ The build.tsk files are processed line by line, each line is logged and then exe
 
 ### A Simple Build Task
 
-In this example, a Java build using Maven is performed. A complete reference for operations and built-in variables is available in the [supported features reference page][mydoc_supported_features].
+In this example, a Java build using Maven is performed. A complete reference for operations and built-in variables is available in the [execution engine][mydoc_execution_engine].
 
 All properties in your CDAF.solution are automatically loaded as variables when the task engine starts:
 

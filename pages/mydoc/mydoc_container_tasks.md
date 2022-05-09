@@ -1,6 +1,6 @@
 ---
 title: Container Tasks
-tags: [formatting]
+tags: [tasks]
 keywords: dcode samples syntax highlighting
 last_updated: July 3, 2016
 datatable: true

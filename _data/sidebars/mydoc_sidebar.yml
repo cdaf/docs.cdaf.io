@@ -144,8 +144,13 @@ entries:
     output: web
     folderitems:
 
-    - title: Supported features
-      url: /mydoc_supported_features.html
+      # subfolders:
+      # - title: Troubleshooting
+      #   output: web
+      #   subfolderitems:
+
+    - title: Windows and Linux Incompatibilities
+      url: /mydoc_windows_linux_incompatibilities.html
       output: web
 
       subfolders:

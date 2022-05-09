@@ -5,8 +5,8 @@ allowed-tags:
   - containers
   - feature_configuration
   - getting_started
-  - content_types
-  - formatting
+  - trouble_shooting
+  - execution_engine
   - mobile
   - navigation
   - news
