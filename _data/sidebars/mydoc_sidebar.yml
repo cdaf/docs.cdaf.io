@@ -144,13 +144,21 @@ entries:
     output: web
     folderitems:
 
-      # subfolders:
-      # - title: Troubleshooting
-      #   output: web
-      #   subfolderitems:
+    - title: Support
+      url: /mydoc_support.html
+      output: web
 
-    - title: Windows and Linux Incompatibilities
-      url: /mydoc_windows_linux_incompatibilities.html
+      subfolders:
+      - title: Troubleshooting
+        output: web
+        subfolderitems:
+
+        - title: Windows and Linux Incompatibilities
+          url: /mydoc_trouble_shooting_windows_linux_incompatibilities.html
+          output: web
+
+    - title: Other Resources
+      url: /mydoc_other_resources.html
       output: web
 
       subfolders:

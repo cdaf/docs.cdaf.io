@@ -1,6 +1,6 @@
 ---
 title: Support
-tags: [getting_started, troubleshooting]
+tags: [getting_started, trouble_shooting]
 keywords: questions, troubleshooting, contact, support
 last_updated: July 3, 2016
 summary: Help, Feedback and Issues via GitHub.

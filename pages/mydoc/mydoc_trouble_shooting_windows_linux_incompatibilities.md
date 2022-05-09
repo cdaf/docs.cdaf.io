@@ -6,8 +6,8 @@ last_updated: "February 27, 2022"
 summary: "This page provides reference material for Continuous Delivery Automation Framework."
 published: true
 sidebar: mydoc_sidebar
-permalink: mydoc_windows_linux_incompatibilities.html
+permalink: mydoc_trouble_shooting_windows_linux_incompatibilities.html
 folder: mydoc
 ---
 
-\r
+todo: messages about \r and "not executable"
