@@ -1,5 +1,5 @@
 ---
-title: "Task Execution"
+title: Task Execution
 tagName: tasks
 search: exclude
 permalink: tag_tasks.html
