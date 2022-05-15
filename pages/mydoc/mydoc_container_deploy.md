@@ -2,15 +2,40 @@
 title: containerDeploy
 tags: [containers, tasks]
 keywords: containers, tasks
-last_updated: July 3, 2016
+last_updated: May 15, 2022
 summary: Perform a Deployment Task from within a Container
 sidebar: mydoc_sidebar
 permalink: mydoc_container_deploy.html
 folder: mydoc
 ---
 
-Like [containerBuild][mydoc_container_build], containerDeploy provides both image build and container task execution.
+Like [containerBuild][mydoc_container_build], containerDeploy provides both image build and container task execution. The common use for container deploy where a command line interface is required.
 
-CDAF_CD_
+# Master of Deployment Success
+
+The containerDeploy option allows the execution of the deploy process from within a container. Unlike toolsets which reference a image that is used to create the deploy container, CDAF uses a Dockerfile, for the folowing advantages:
+
+- Deploy Prerequisites can be defined in code, without being limited to available published images
+- Once constructed the image image cache provides improved performance, without having to use a image registry
+
+# Container Deploy Configuration
+
+To execute the deploy within a container, add the containerDeploy definition and runtimeImage (if not supplied, containerImage will be used) to **CDAF.solution**. Note: complete definitions are provided in the GitHub samples for [Windows](hhttps://github.com/cdaf/windows/tree/master/samples/containerDeploy) and [Linux](https://github.com/cdaf/linux/tree/master/samples/containerDeploy).
+
+## Windows
+
+    containerDeploy=& ${WORK_DIR_DEFAULT}/containerDeploy.ps1 "${TARGET}" "${RELEASE}" "${SOLUTION}" "${BUILDNUMBER}" "${REVISION}" -imageDir cli
+    runtimeImage=mcr.microsoft.com/windows/server:ltsc2022
+
+## Linux
+
+    containerDeploy=${WORK_DIR_DEFAULT}/containerDeploy.sh "${TARGET}" "${RELEASE}" "${SOLUTION}" "${BUILDNUMBER}" "${REVISION}" cli
+    containerImage=ubuntu:20.04
+
+## Deploy Time Variables
+
+To supply variables to the build process, prefix with *CDAF_CD_* (see [CDAF Environment Variables][mydoc_environment_variables]) and the variables will be mapped into the build container.
+
+> See GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/containerDeploy) and [Linux](https://github.com/cdaf/linux/tree/master/samples/containerDeploy) for dockerfile and additional properties.
 
 {% include links.html %}
