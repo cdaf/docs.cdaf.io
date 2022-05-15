@@ -22,6 +22,9 @@ The following environment
 | CDAF_IGNORE_WARNING       | If messages are logged to standard error, the [Execution Engine][mydoc_execution_engine] will log but not halt, however is this is set to yes, processing will halt <br/>yes or no, default is yes
 | CDAF_OVERRIDE_TOKEN       | Default marker for DETOKN or PROPLD in [Execution Engine][mydoc_execution_engine] is %, i.e. %key_name%, the markers can be changed using this environment variable
 | CDAF_SKIP_CONTAINER_BUILD | [containerBuild][mydoc_container_build] will not be performed if this environment variable is set to any value
+| CONTAINER_IMAGE           | Override containerImage in [containerBuild][mydoc_container_build] & [imageBuild][mydoc_image_build]
+| CDAF_CB_<variable_name>   | Prefix used in [containerBuild][mydoc_container_build] to supply local variables into the build time container
+| CDAF_CD_<variable_name>   | Prefix used in [containerDeploy[][mydoc_container_deploy] to supply local variables into the deploy time container
 
 > Next: [Sensitive Data Strategies][mydoc_sensitive_data_strategies]
 

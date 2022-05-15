@@ -9,8 +9,10 @@ permalink: mydoc_docker_containers.html
 folder: mydoc
 ---
 
-Some CI/CD pipeline toolsets support native functionality (GitLab, BitBucket), or in other some cases, exclusive functionality (CircleCI, Travis) where all pipeline activity is actually executed within containers. For those 
+Some CI/CD pipeline toolsets support native capability (GitLab, BitBucket) to execute with a container. In other some cases, (CircleCI, Travis) all pipeline activity can only be executed within containers.
 
-For toolsets which do not support this functionality, but do allow for self-hosted agents or where a self-hosted agent is preferredm i.e. execution within a private network, the CDAF container helpers can provide consistency or use and housekeeping capability.
+For toolsets which do not support this functionality, but do allow for self-hosted agents or where a self-hosted agent is preferred/mandated i.e. execution within a private network, the CDAF container helpers can provide consistency for construction, execution and housekeeping.
+
+Even with a toolset uses containers, if they support docker-in-docker, the CDAF container helpers can still be utilised.
 
 {% include links.html %}

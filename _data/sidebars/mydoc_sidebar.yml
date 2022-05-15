@@ -128,6 +128,10 @@ entries:
       url: /mydoc_container_build.html
       output: web
 
+    - title: imageBuild
+      url: /mydoc_image_build.html
+      output: web
+
     - title: containerDeploy
       url: /mydoc_container_deploy.html
       output: web
