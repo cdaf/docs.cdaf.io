@@ -4,13 +4,7 @@ Static Content published via GitHub Pages, based on https://idratherbewriting.co
 
 # pre-requisites : Ruby Development Kit
 
-Based on https://docs.cdaf.io/mydoc_install_jekyll_on_windows.html
-
-## Windows
-
-Download the Ruby+DevKit from http://rubyinstaller.org/downloads/ and run the ridk install with defaults, then, in Administrator console, install Bundler
-
-    gem install bundler
+Can only get this to run consistently on Linux
 
 ## Linux
 
@@ -19,7 +13,18 @@ In Ubuntu, e.g. WSL
     sudo apt update && sudo apt -y install ruby-full build-essential
     sudo gem install bundler
 
+## Windows
+
+> Could note get this to work
+
+Based on https://docs.cdaf.io/mydoc_install_jekyll_on_windows.html
+Download the Ruby+DevKit from http://rubyinstaller.org/downloads/ and run the ridk install with defaults, then, in Administrator console, install Bundler
+
+    gem install bundler
+
 ## Install Dependencies and run Locally
+
+> Do not run from WSL windows mount or the auto-detect will not work.
 
 From Git workspace, run the application with live loading (--incremental)
 
