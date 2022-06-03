@@ -3,6 +3,7 @@ title: Introduction
 sidebar: mydoc_sidebar
 permalink: mydoc_introduction.html
 folder: mydoc
+keywords: build artefacts, agents, pipelines
 ---
 
 ## _Geared for Enterprise DevOps_

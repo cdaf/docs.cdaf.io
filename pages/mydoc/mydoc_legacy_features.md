@@ -1,7 +1,7 @@
 ---
 title: Legacy Features
 tags: [feature_configuration, tasks]
-keywords: local testing, loop-back
+keywords: local testing, loop-back, loop back
 last_updated: May 4, 2022
 summary: Supported features of CDAF, whos use is discouraged
 sidebar: mydoc_sidebar

@@ -1,7 +1,7 @@
 ---
 title: Support
 tags: [getting_started, trouble_shooting]
-keywords: questions, troubleshooting, contact, support
+keywords: questions, troubleshooting, contact, support, github, windows, linux
 last_updated: July 3, 2016
 summary: Help, Feedback and Issues via GitHub.
 sidebar: mydoc_sidebar

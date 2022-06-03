@@ -1,7 +1,7 @@
 ---
 title: Solution Properties
 tags: [feature_configuration]
-keywords: controls
+keywords: solutionName, productName, artifactPrefix, productVersion, containerBuild, containerImage, imageBuild, runtimeImage, constructor, defaultBranch, CDAF_REGISTRY_URL, CDAF_REGISTRY_TAG, CDAF_REGISTRY_USER, CDAF_REGISTRY_TOKEN, gitRemoteURL, gitUserNameEnvVar, gitUserPassEnvVar, gitCustomCleanup
 last_updated: May 4, 2022
 summary: CDAF Configuration Properties.
 sidebar: mydoc_sidebar

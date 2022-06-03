@@ -1,7 +1,7 @@
 ---
 title: Environment Variables
 tags: [feature_configuration]
-keywords: controls
+keywords: CDAF_BRANCH_NAME, CDAF_DOCKER_REQUIRED, CDAF_DELIVERY, CDAF_ERROR_DIAG, CDAF_IGNORE_WARNING, CDAF_OVERRIDE_TOKEN, CDAF_SKIP_CONTAINER_BUILD, CONTAINER_IMAGE, CDAF_CB_, CDAF_CD_
 last_updated: May 4, 2022
 summary: CDAF Control Variables.
 sidebar: mydoc_sidebar
@@ -23,8 +23,8 @@ The following environment
 | CDAF_OVERRIDE_TOKEN       | Default marker for DETOKN or PROPLD in [Execution Engine][mydoc_execution_engine] is %, i.e. %key_name%, the markers can be changed using this environment variable
 | CDAF_SKIP_CONTAINER_BUILD | [containerBuild][mydoc_container_build] will not be performed if this environment variable is set to any value
 | CONTAINER_IMAGE           | Override containerImage in [containerBuild][mydoc_container_build] & [imageBuild][mydoc_image_build]
-| CDAF_CB_<variable_name>   | Prefix used in [containerBuild][mydoc_container_build] to supply local variables into the build time container
-| CDAF_CD_<variable_name>   | Prefix used in [containerDeploy[][mydoc_container_deploy] to supply local variables into the deploy time container
+| CDAF_CB_{variable_name}   | Prefix used in [containerBuild][mydoc_container_build] to supply local variables into the build time container
+| CDAF_CD_{variable_name}   | Prefix used in [containerDeploy][mydoc_container_deploy] to supply local variables into the deploy time container
 
 > Next: [Sensitive Data Strategies][mydoc_sensitive_data_strategies]
 

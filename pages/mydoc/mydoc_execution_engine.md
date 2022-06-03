@@ -1,7 +1,7 @@
 ---
 title: Execution Engine
 tags: [feature_configuration]
-keywords: ci, cd, make
+keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, PROPLD, REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
 last_updated: May 5, 2022
 summary: Line-by-line Execution.
 sidebar: mydoc_sidebar
@@ -22,7 +22,7 @@ The following operations are provided to simplify common tasks.
 
 | Keyword | Description                                                | Example
 | --------|------------------------------------------------------------|--------
-| ASSIGN  | Display and expand as necessary                            | ASSIGN $test="$varcontainingvar"
+| ASSIGN  | Display, and expand as necessary, variable assignment      | ASSIGN $test="$varcontainingvar"
 | CMPRSS  | Compress directory to file                                 | CMPRSS packageName dirName
 | DCMPRS  | Decompress package file                                    | DCMPRS packageName
 | DECRYP  | decrypt using private_key.pem                              | DECRYP crypt/encrypt.dat
@@ -38,6 +38,8 @@ The following operations are provided to simplify common tasks.
 |         | Exit normally if set to value                              | EXITIF $ACTION clean
 | INVOKE  | call a custom script                                       | INVOKE ./script "Hello"
 | MAKDIR  | Create a directory and path (opt)                          | MAKDIR directory/and/path
+| MASKED  | Return an uppercase hexadecimal checksum using SHA256      | MASKED $password
+| MD5MSK  | Deprecated. Return an uppercase hexadecimal checksum       | MD5MSK $password
 | PROPLD  | Load properties as variables                               | PROPLD PROP_FILE
 |         | Expand and reveal embedded variables                       | PROPLD $TARGET reveal
 |         | Expand but do not reveal embedded variables                | PROPLD manifest.txt resolve
@@ -71,8 +73,8 @@ These are automatically set at execution start-up
 |-----------------|----------------------------------
 | $AUTOMATIONROOT | The directory of the Continuous Delivery Automation Framework
 | $SOLUTIONROOT   | The solution directory identified by CDAF.solution file
-| BUILDNUMBER     | The first argument passed, if not passed, this is generated
-| ACTION          | The second argument passed, has some hardcoded functions<br/> • clean: only remove temp files<br/> • packageonly: skip any build tasks
+| $BUILDNUMBER    | The first argument passed, if not passed, this is generated
+| $ACTION         | The second argument passed, has some hardcoded functions<br/> • clean: only remove temp files<br/> • packageonly: skip any build tasks
 | $TMPDIR         | Automatically set to the temp dir
 | $WORKSPACE      | The working directory at execution start-up
 
