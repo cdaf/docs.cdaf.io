@@ -22,5 +22,15 @@ topnav_dropdowns:
           url: /p1_landing_page.html
         - title: Virtualisation
           url: /p2_landing_page.html
+    - title: CDAF
+      folderitems:
+        - title: CDAF Publication
+          external_url: https://cdaf.io
+        - title: CDAF Blog
+          external_url: https://blog.cdaf.io
+        - title: CDAF Docs (This Site)
+          external_url: https://docs.cdaf.io
+        - title: CDAF Edge on GitHub
+          external_url: https://https://github.com/cdaf
 
 # Copyright 2021 Google LLC

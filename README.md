@@ -24,7 +24,7 @@ RHEL 8
 
 > Could not get this to work
 
-Based on https://docs.cdaf.io/mydoc_install_jekyll_on_windows.html
+Based on https://idratherbewriting.com/documentation-theme-jekyll/mydoc_install_jekyll_on_windows.html
 Download the Ruby+DevKit from http://rubyinstaller.org/downloads/ and run the ridk install with defaults, then, in Administrator console, install Bundler
 
 ## Install Dependencies and run Locally
