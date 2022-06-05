@@ -24,7 +24,7 @@ Once the environment is running access the build server an execute the CD emulat
     cd /vagrant
     ./automation/cdEmulate.sh
 
-### Cleanup and Destroy
+### Clean-up and Destroy
 
 If change made that need to be checked in, clean the workspace:
 

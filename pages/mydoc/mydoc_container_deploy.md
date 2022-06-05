@@ -13,7 +13,7 @@ Like [containerBuild][mydoc_container_build], containerDeploy provides both imag
 
 # Master of Deployment Success
 
-The containerDeploy option allows the execution of the deploy process from within a container. Unlike toolsets which reference a image that is used to create the deploy container, CDAF uses a Dockerfile, for the folowing advantages:
+The containerDeploy option allows the execution of the deploy process from within a container. Unlike toolsets which reference a image that is used to create the deploy container, CDAF uses a Dockerfile, for the following advantages:
 
 - Deploy Prerequisites can be defined in code, without being limited to available published images
 - Once constructed the image image cache provides improved performance, without having to use a image registry

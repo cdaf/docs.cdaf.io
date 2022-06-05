@@ -13,7 +13,7 @@ box_number: 4
 folder: mydoc
 ---
 
-Local Tasks use the same execution engined as [build tasks][mydoc_basics_build_tasks], but at deploy time, rather than build time. Local Tasks are executed in the local context of the host/server. Local Tasks are suited to situations where the agent is installed on the server where tasks are to be performed, or the server that the agent is installed has the tools required to perform tasks on a remote target, i.e. a service offering with a command line interface, such as Kubernettes, Azure or AWS.
+Local Tasks use the same execution engined as [build tasks][mydoc_basics_build_tasks], but at deploy time, rather than build time. Local Tasks are executed in the local context of the host/server. Local Tasks are suited to situations where the agent is installed on the server where tasks are to be performed, or the server that the agent is installed has the tools required to perform tasks on a remote target, i.e. a service offering with a command line interface, such as Kubernetes, Azure or AWS.
 
 > The CDAF capabilities with [containers][mydoc_docker_containers] cater for more sophisticated uses in the local context and the alternative [container tasks][mydoc_container_tasks] execution approach.
 
@@ -33,7 +33,7 @@ Write-Host "Use Web Deploy to deploy the Aware application`n"
 
 The local task context one of the most important features for repeatable release deployment is the ability to detokenise files. Tokenised configuration files reduce the risk of structural drift of settings files in source control, while making the release targets scalable, i.e. making it easier to add another test or user acceptance environment.
 
-The environment which is passed to the relase package is used to match to the ``target`` defined in [configuration management][mydoc_basics_configuration_management] for detokenisation. The properties file before the DETOKN operation
+The environment which is passed to the release package is used to match to the ``target`` defined in [configuration management][mydoc_basics_configuration_management] for detokenisation. The properties file before the DETOKN operation
 
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -64,7 +64,7 @@ If the release is deployed to test, i.e. ``./release.ps1 TEST``, the resulting p
 
 ## Alternate Tasks
 
-If you require a variety of tasks, you can explicitely define them, which will ignore any tasksRun.tsk and tasksRunLocal.tsk in your solution root. Please your task files in directorie named either ``custom`` or ``customLocal`` in your solution root.
+If you require a variety of tasks, you can explicitly define them, which will ignore any tasksRun.tsk and tasksRunLocal.tsk in your solution root. Please your task files in directorie named either ``custom`` or ``customLocal`` in your solution root.
 
 To map your configuration to the alternate tasks, you must use the column name ``deployTaskOverride``.
 

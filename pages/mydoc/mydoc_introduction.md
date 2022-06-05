@@ -16,7 +16,7 @@ CDAF provides consistency in the solution build, package and delivery mechanics,
 
 ![](images/ToolsetIntegration.png)
 
-- **Loose Coupling** : Designed for workstation implemention first, with no tight coupling to any given automation toolset
+- **Loose Coupling** : Designed for workstation implementation first, with no tight coupling to any given automation toolset
 - **Lowest Common Denominator** : Using the minimum of the toolchain plugins & capabilities, to ensure loose coupling
 - **Package Portability** : Package Task execution designed for automated push / pull or manually deployment
 - **Task Definition** : Framework to manage logging, exceptions and errors, to allow the user to focus on the tasks to be performed
@@ -31,7 +31,7 @@ The results of the CI process can be retained and re-used in deployment process.
 
 #### Agents
 
-CI/CD orchestration tools execute the task workload on Agents. There are a broad range of implemenation styles, especially with regards to how the agents communicate with the server,and how tasks are distributed to agents, but the principle is largely the same.
+CI/CD orchestration tools execute the task workload on Agents. There are a broad range of implementation styles, especially with regards to how the agents communicate with the server,and how tasks are distributed to agents, but the principle is largely the same.
 
 > some agents are obfuscated from the users, and others will execute tasks in isolated containers on the agent, which will be explored in more detail in the Containers section.
 

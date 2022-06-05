@@ -14,7 +14,7 @@ To alleviate the burden of argument passing, exception handling and logging, the
 
 ### Where is it used
 
-In all places using .tsk files, i.e. build, package, wrap and deploy. The following operations are available to all tasks, however, some are more applicable to specfic processes, see Build, Local and Remote task execution for more details of how these can be used.
+In all places using .tsk files, i.e. build, package, wrap and deploy. The following operations are available to all tasks, however, some are more applicable to specific processes, see Build, Local and Remote task execution for more details of how these can be used.
 
 ### Operations
 
@@ -58,7 +58,7 @@ The following operations are only available in PowerShell version
 | ELEVAT  | Execute as elevated NT SYSTEM     | ELEVAT "$(pwd)/custom.ps1"      |
 | IMGTXT  | Display image file as text        | IMGTXT sample.jpg               |
 
-Notes on EXCREM use, the properties are similar to those used for remote tasks, where the minimum requried is the host, if other properties are not used, must be set to NOT_SUPPLIED, i.e.
+Notes on EXCREM use, the properties are similar to those used for remote tasks, where the minimum required is the host, if other properties are not used, must be set to NOT_SUPPLIED, i.e.
 
   deployHost=localhost
   remUser=NOT_SUPPLIED

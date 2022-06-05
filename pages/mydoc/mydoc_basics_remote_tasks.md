@@ -19,7 +19,7 @@ The Remote Task is executed in a local context, so all the processes described i
 
 ## SSH/SCP or Remote PowerShell with custom file transfer
 
-Remote PowerShell for Windows or SSH/SCP for Linux are the protocols used to tranfer the Remote Task package to the remote host for execution. PowerShell does not have an file transort protocol (Windows is typically reliant on SMB) so a CDAF feature has be provided to allow a file transfer mechanism similar to SCP in Linux.
+Remote PowerShell for Windows or SSH/SCP for Linux are the protocols used to transfer the Remote Task package to the remote host for execution. PowerShell does not have an file transport protocol (Windows is typically reliant on SMB) so a CDAF feature has be provided to allow a file transfer mechanism similar to SCP in Linux.
 
 ## Nested Package
 
@@ -27,7 +27,7 @@ When using Remote Tasks, a reduced set of CDAF helper scripts are packed into a 
 
 ## Remote Task Configuration
 
-The default authentication for transferring the remote files is pre-shared keys for Linux and domain service principke for Windows, however, alternative authentication methods are supported.
+The default authentication for transferring the remote files is pre-shared keys for Linux and domain service principle for Windows, however, alternative authentication methods are supported.
 
 ```
 context  target     deployHost   remoteUser

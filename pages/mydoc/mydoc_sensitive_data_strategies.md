@@ -11,7 +11,7 @@ folder: mydoc
 
 # Loose Coupling
 
-A key approach to support the principle of automation execution in a local desktop context, is the use of environment variables. It's important to remember that environment variables do not necessarily need to be persisted, i.e. stored unencypted on disk, it's the global availability of the variable that makes it an environment variable.
+A key approach to support the principle of automation execution in a local desktop context, is the use of environment variables. It's important to remember that environment variables do not necessarily need to be persisted, i.e. stored unencrypted on disk, it's the global availability of the variable that makes it an environment variable.
 
 # Variable Expansion
 
@@ -21,13 +21,13 @@ Variables can be referenced in preoperties files (see [Configuration Management]
 
 This approach is to allow secrets in a file to be stored in source control. Encryption key for Windows is an EAS key, while for Linux it's a GPG key. This approach is used when there are a large number of secrets to cater for, and therefore only the key needs to be managed as a secret.
 
-In early generations of secret management, the secrets would be stored as persistent environment varaibles, however all modern toolsets provide an encrypted store which can load secrets as environment variables.
+In early generations of secret management, the secrets would be stored as persistent environment variables, however all modern toolsets provide an encrypted store which can load secrets as environment variables.
 
 See the DECRYP & DETOKN operations in the [execution engine][mydoc_execution_engine] for guidance on usage.
 
 # Cloud Storage Integration
 
-Toolset providers who also supply public cloud provide integrationn to their secret storage offerings, while these can be convenient, this does couple your automation to toolset and makes the execution of locally challenging.
+Toolset providers who also supply public cloud provide integration to their secret storage offerings, while these can be convenient, this does couple your automation to toolset and makes the execution of locally challenging.
 
 > Next: [Legacy Features][mydoc_legacy_features]
 

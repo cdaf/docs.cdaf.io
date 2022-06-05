@@ -45,7 +45,7 @@ User name not supplied, will attempt windows integrated authentication
 Current Database version : 00.00.00.006
 
 ./Database/scripts/00.00.00.007.sql
-Script executed successfuly
+Script executed successfully
 
 Database version now : 00.00.00.007
 ```

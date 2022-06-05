@@ -27,7 +27,7 @@ See solution/CDAF.solution in CDAF automation directory.
 | containerImage            | Image to be used in the container based build execution
 | imageBuild                | Dependency injection for creating a container image after CI process, see the Image Registry properties below
 | runtimeImage              | Image to used in the runtime image created by imageBuild
-| constructor               | Directory in which container images are constructed, default action will tranverse and build in all directories
+| constructor               | Directory in which container images are constructed, default action will transverse and build in all directories
 | defaultBranch             | Used to determine feature branch functionality, default is master
 
 ### Image Registry

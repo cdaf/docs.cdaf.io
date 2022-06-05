@@ -66,7 +66,7 @@ You will the same steps executed above, but with a wrapper, it is this wrapper t
 
 ## Shift-Left & Fail-Fast
 
-Now that you have the bare minimum, appply it to your CI/CD toolset immediately. We want to have a green pipeline from the start to trap any problems we may introduce in subsequent steps
+Now that you have the bare minimum, apply it to your CI/CD toolset immediately. We want to have a green pipeline from the start to trap any problems we may introduce in subsequent steps
 
 > Next: Install CDAF [to your pipeline][mydoc_install_pipeline]
 

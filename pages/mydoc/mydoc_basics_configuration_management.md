@@ -13,7 +13,7 @@ box_number: 1
 folder: mydoc
 ---
 
-CDAF origin was to ensure consistent configuration of servers accross environments, based on a source of truth. The partner construct to this approach is tokenisation, i.e. a way of abstracting environment variations away from the syntax of the consuming application.
+CDAF origin was to ensure consistent configuration of servers across environments, based on a source of truth. The partner construct to this approach is tokenisation, i.e. a way of abstracting environment variations away from the syntax of the consuming application.
 
 ## Tabular Properties
 
@@ -28,7 +28,7 @@ local    PROD    cluster.prod.local  $prodPass
 
 > Configuration Management files should never container sensitive data or secrets. These are supplied as variables, see more on [sensitive data strategies][mydoc_sensitive_data_strategies].
 
-The configuration managment tables can be any file name with .cm extension, in your solution root. All .cm files are processed prior to the [build task][mydoc_basics_build_tasks] in the CI process.
+The configuration management tables can be any file name with .cm extension, in your solution root. All .cm files are processed prior to the [build task][mydoc_basics_build_tasks] in the CI process.
 
 ## Tokenisation
 

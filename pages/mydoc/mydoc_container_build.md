@@ -11,7 +11,7 @@ folder: mydoc
 
 # Master of Build Success
 
-The containerBuild option allows the execution of the build process from within a container. Unlike toolsets which reference a image that is used to create the build container, CDAF uses a Dockerfile, for the folowing advantages:
+The containerBuild option allows the execution of the build process from within a container. Unlike toolsets which reference a image that is used to create the build container, CDAF uses a Dockerfile, for the following advantages:
 
 - Build Prerequisites can be defined in code, without being limited to available published images
 - Once constructed the image image cache provides improved performance, without having to use a image registry

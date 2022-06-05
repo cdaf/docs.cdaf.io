@@ -8,7 +8,7 @@ permalink: mydoc_install_pipeline.html
 folder: mydoc
 ---
 
-There are far too many CI/CD toolsets avaiable to provide detailed instructions on how to connect your solution, however, this page should provide enough examples to help configure your selected pipeline. The key principle is loose coupling, so there are two scripts to call, entry for CI, and release for CD.
+There are far too many CI/CD toolsets available to provide detailed instructions on how to connect your solution, however, this page should provide enough examples to help configure your selected pipeline. The key principle is loose coupling, so there are two scripts to call, entry for CI, and release for CD.
 
 # Pipeline as Code
 
