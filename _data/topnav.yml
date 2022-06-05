@@ -31,6 +31,6 @@ topnav_dropdowns:
         - title: CDAF Docs (This Site)
           external_url: https://docs.cdaf.io
         - title: CDAF Edge on GitHub
-          external_url: https://https://github.com/cdaf
+          external_url: https://github.com/cdaf
 
 # Copyright 2021 Google LLC
