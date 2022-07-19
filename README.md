@@ -18,7 +18,7 @@ RHEL 8
     sudo dnf install ruby ruby-devel
     sudo dnf group install "Development Tools"
 
-> RHEL distribution is out of date and had to upgrade the gems explicitely.
+> RHEL distribution is out of date and had to upgrade the gems explicitly.
 
 ## Windows
 
@@ -35,7 +35,7 @@ Do not run sudo
 
 > Do not run from WSL windows mount or the auto-detect will not work.
 
-From Git workspace, one-off step to install depdendencies
+From Git workspace, one-off step to install dependencies
 
     bundle install
     bundle update
