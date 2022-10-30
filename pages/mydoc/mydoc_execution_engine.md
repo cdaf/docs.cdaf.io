@@ -36,6 +36,7 @@ The following operations are provided to simplify common tasks.
 |         | Execute script                                             | EXCREM ./capabilities.sh
 | EXITIF  | Exit normally if argument set                              | EXITIF $ACTION
 |         | Exit normally if set to value                              | EXITIF $ACTION clean
+| IMGTXT  | Display image file as text (wrapper for jp2a in Linux)     | IMGTXT sample.jpg               |
 | INVOKE  | call a custom script                                       | INVOKE ./script "Hello"
 | MAKDIR  | Create a directory and path (opt)                          | MAKDIR directory/and/path
 | MASKED  | Return an uppercase hexadecimal checksum using SHA256      | MASKED $password
@@ -56,7 +57,6 @@ The following operations are only available in PowerShell version
 | --------|-----------------------------------|---------------------------------|
 | CMDTST  | Returns true if command exists    | CMDTST vagrant                  |
 | ELEVAT  | Execute as elevated NT SYSTEM     | ELEVAT "$(pwd)/custom.ps1"      |
-| IMGTXT  | Display image file as text        | IMGTXT sample.jpg               |
 
 Notes on EXCREM use, the properties are similar to those used for remote tasks, where the minimum required is the host, if other properties are not used, must be set to NOT_SUPPLIED, i.e.
 
