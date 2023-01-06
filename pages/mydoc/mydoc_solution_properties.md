@@ -24,6 +24,7 @@ See solution/CDAF.solution in CDAF automation directory.
 | artifactPrefix            | Generate a self-extracting package script, example 0.0
 | productVersion            | Do a self-extracting package script, example 0.0.0
 | CDAF_HOME_MOUNT           | to disable volume mount for containerDeploy set to 'no'
+| CDAF_ERROR_DIAG           | arbitrary command(s) to execute when failure encountered
 | containerBuild            | Dependency injection for running container based build execution
 | containerImage            | Image to be used in the container based build execution
 | imageBuild                | Dependency injection for creating a container image after CI process, see the Image Registry properties below
