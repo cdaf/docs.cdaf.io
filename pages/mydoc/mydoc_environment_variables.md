@@ -26,6 +26,7 @@ The following environment
 | CONTAINER_IMAGE           | Override containerImage in [containerBuild][mydoc_container_build] & [imageBuild][mydoc_image_build]
 | CDAF_CB_{variable_name}   | Prefix used in [containerBuild][mydoc_container_build] to supply local variables into the build time container
 | CDAF_CD_{variable_name}   | Prefix used in [containerDeploy][mydoc_container_deploy] to supply local variables into the deploy time container
+| CDAF_IB_{variable_name}   | Prefix used in [containerBuild][mydoc_image_build] to supply during image construction
 
 > Next: [Sensitive Data Strategies][mydoc_sensitive_data_strategies]
 
