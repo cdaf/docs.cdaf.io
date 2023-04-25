@@ -118,6 +118,16 @@ spring_fqdn: "%spring_fqdn%"
 rails_fqdn: "%rails_fqdn%"
 ```
 
+### Helm Pod
+
+``` yaml
+env:
+  - name: QUEUE_TRANSPORT
+    value: "%QUEUE_TRANSPORT%"
+  - name: ORM_CONNECTION
+    value: "%ORM_CONNECTION%"
+---
+
 With the properties for the application defined, now it is time to build the application.
 
 > Next: [build tasks][mydoc_basics_build_tasks]
