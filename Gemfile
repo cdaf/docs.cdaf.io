@@ -5,3 +5,4 @@ source "https://rubygems.org"
 
 # to publich without github page
 gem "jekyll"
+gem "jekyll-sass-converter", "~> 2.0"

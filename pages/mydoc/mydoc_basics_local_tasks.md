@@ -13,54 +13,55 @@ box_number: 4
 folder: mydoc
 ---
 
-Local Tasks use the same execution engined as [build tasks][mydoc_basics_build_tasks], but at deploy time, rather than build time. Local Tasks are executed in the local context of the host/server. Local Tasks are suited to situations where the agent is installed on the server where tasks are to be performed, or the server that the agent is installed has the tools required to perform tasks on a remote target, i.e. a service offering with a command line interface, such as Kubernetes, Azure or AWS.
+Local Tasks use the same execution engined as [build tasks][mydoc_basics_build_tasks], but at deploy time, rather than build time. Local Tasks are executed in the local context of the host/server. Local Tasks are suited to situations where the agent is installed on the server where tasks are to be performed, or the server that the agent/runner is installed has the tools required to perform tasks on a remote target, i.e. a service offering with a command line interface, such as Kubernetes, Azure or AWS.
 
 > The CDAF capabilities with [containers][mydoc_docker_containers] cater for more sophisticated uses in the local context and the alternative [container tasks][mydoc_container_tasks] execution approach.
 
 ## Example Task
 
-The default tasks that are run in the local context are tasksRun.tsk and tasksRunLocal.tsk. There are placed in your solution root.
+The default tasks that are run in the local context are `tasksRun.tsk` and `tasksRunLocal.tsk`. These are placed in your solution root.
+
+
+### Linux
+
+``` bash
+echo 'DETOKN ./output/runtime.sh' > .cdaf/tasksRunLocal.tsk
+echo '' >> .cdaf/tasksRunLocal.tsk
+echo './output/runtime.sh' >> .cdaf/tasksRunLocal.tsk
+```
+
+### Windows
 
 ``` powershell
-Write-Host "Detokenise the settings for this environment`n"
-DETOKN aspdotnet.SetParameters.xml
-
-Write-Host "Use Web Deploy to deploy the Aware application`n"
-.\aspdotnet.deploy.cmd /Y /M:localhost
+Set-Content .\.cdaf\tasksRunLocal.tsk 'DETOKN .\output\runtime.ps1'
+Add-Content .\.cdaf\tasksRunLocal.tsk ''
+Add-Content .\.cdaf\tasksRunLocal.tsk '.\output\runtime.ps1'
 ```
 
-## DETOKN : Detokenise File
+## Continuous Delivery Emulation (CD)
 
-The local task context one of the most important features for repeatable release deployment is the ability to detokenise files. Tokenised configuration files reduce the risk of structural drift of settings files in source control, while making the release targets scalable, i.e. making it easier to add another test or user acceptance environment.
+Execute the CD emulation
 
-The environment which is passed to the release package is used to match to the ``target`` defined in [configuration management][mydoc_basics_configuration_management] for detokenisation. The properties file before the DETOKN operation
+    cdEmulate.sh
 
-``` xml
-<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <setParameter name="IIS Web Application Name" value="Default Web Site/wol" />
-  <setParameter name="aspdotnetEntities.config Connection String" value="metadata=res://*/Models.aspdotnet.csdl|res://*/Models.aspdotnet.ssdl|res://*/Models.aspdotnet.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=%databaseFQDN%;initial catalog=aspdotnetapp;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" />
-</parameters>
-```
+or for windows
 
-For this properties.cm example
+    cdEmulate
+
+Two steps are performed, first the deployable artefact is detokenised
 
 ```
-context  target  databaseFQDN        dBpassword
-local    TEST    db1.nonprod.local   $db1Pass
-local    UAT     db2.nonprod.local   $db2Pass
-local    PROD    cluster.prod.local  $prodPass
+Found %property%, replacing with Local Context
+Found %integer%, replacing with 1
 ```
 
-If the release is deployed to test, i.e. ``./release.ps1 TEST``, the resulting properties file will have ``source=%databaseFQDN%`` replaced by ``source=db1.nonprod.local``. 
+Then executed to verify the environment specific properties.
 
-``` xml
-<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <setParameter name="IIS Web Application Name" value="Default Web Site/wol" />
-  <setParameter name="aspdotnetEntities.config Connection String" value="metadata=res://*/Models.aspdotnet.csdl|res://*/Models.aspdotnet.ssdl|res://*/Models.aspdotnet.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=db1.nonprod.local;initial catalog=aspdotnetapp;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" />
-</parameters>
 ```
+Deploy 1, property set to : Local Context
+```
+
+This now completes an end-to-end example of CDAF, from configuration management, build & package through to deployment. Following are some common additional configuration elements, and the final step covers the increasingly less common pattern of [Remote tasks][mydoc_basics_remote_tasks].
 
 ## Alternate Tasks
 

@@ -11,7 +11,6 @@ Can only get this to run consistently on Linux
 In Ubuntu, e.g. WSL
 
     sudo apt update && sudo apt -y install ruby-full build-essential
-    sudo gem install bundler
 
 RHEL 8
 

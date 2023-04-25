@@ -7,10 +7,9 @@ sidebar: mydoc_sidebar
 folder: mydoc
 ---
 
-To install for the local user, recommend placing in your home directory
+To install to current directory (recommend placing in your home directory)
 
 ``` powershell
- cd $HOME
 . { iwr -useb https://cdaf.io/static/app/downloads/cdaf.ps1 } | iex
 .\automation\provisioning\addPath.ps1 "$(pwd)\automation"
 ```
