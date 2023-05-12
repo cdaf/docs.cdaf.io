@@ -46,7 +46,8 @@ The following operations are provided to simplify common tasks.
 |         | Expand but do not reveal embedded variables                | PROPLD manifest.txt resolve
 | REMOVE  | Delete files, including wildcard                           | REMOVE *.war
 | REPLAC  | Replace token in file                                      | REPLAC fileName %token% $value
-| VARCHK  | Variable validation check                                  | VARCHK varlistFileName
+| VARCHK  | Variable validation using default file properties.varchk   | VARCHK
+|         | Variable validation using names file                       | VARCHK vars.properties
 | VECOPY  | Verbose copy                                               | VECOPY *.war
 
 #### Windows only
