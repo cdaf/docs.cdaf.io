@@ -28,10 +28,12 @@ See solution/CDAF.solution in CDAF automation directory.
 | containerDeploy           | Execute deployment from within a container, uses the storeForRemote artefact definition
 | imageBuild                | Dependency injection for creating a container image after CI process, see the Image Registry properties below
 | runtimeImage              | Image to used in the runtime image created by imageBuild
-| constructor               | Directory in which container images are constructed, default action will transverse and build in all directories
+| constructor               | Directory in which container images are constructed, default action will traverse and build in all directories
 | defaultBranch             | Used to determine feature branch functionality, default is master
 | defaultEnvironment        | Default environment to use for [CDAF Feature Branch Environments post](https://blog.cdaf.io/posts/2022-02-20-feature-branch-environments/), defaults to DOCKER
 | processSequence           | Deployment Process Sequence, defaults to localTasks, remoteTasks and finally containerTasks
+| packageFeatures           | Reduce CAF helper scripts included in release package, value `minimal`. Defaults to `full`
+| packageMethod             | Windows only, use tar for release package construction, value `tarball`. Defaults to `zip`
 
 ## Environment Variable Substitution
 
