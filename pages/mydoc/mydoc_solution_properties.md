@@ -21,16 +21,26 @@ See solution/CDAF.solution in CDAF automation directory.
 |---------------------------|------------
 | solutionName              | Required. Do not include spaces.
 | productName               | Solution description, this can contain spaces.
-| artifactPrefix            | Generate a self-extracting package script, example 0.0
+| artifactPrefix            | Generate a self-extracting package script, example 0.0, mutually exclusive to productVersion
 | productVersion            | Do a self-extracting package script, example 0.0.0
-| CDAF_HOME_MOUNT           | to disable volume mount for containerDeploy set to 'no'
-| CDAF_ERROR_DIAG           | arbitrary command(s) to execute when failure encountered
 | containerBuild            | Dependency injection for running container based build execution
 | containerImage            | Image to be used in the container based build execution
+| containerDeploy           | Execute deployment from within a container, uses the storeForRemote artefact definition
 | imageBuild                | Dependency injection for creating a container image after CI process, see the Image Registry properties below
 | runtimeImage              | Image to used in the runtime image created by imageBuild
 | constructor               | Directory in which container images are constructed, default action will transverse and build in all directories
 | defaultBranch             | Used to determine feature branch functionality, default is master
+| defaultEnvironment        | Default environment to use for [CDAF Feature Branch Environments post](https://blog.cdaf.io/posts/2022-02-20-feature-branch-environments/), defaults to DOCKER
+| processSequence           | Deployment Process Sequence, defaults to localTasks, remoteTasks and finally containerTasks
+
+## Environment Variable Substitution
+
+The following properties can be used in place of environment variables 
+
+| Variable                  | Description
+|---------------------------|------------
+| CDAF_HOME_MOUNT           | to disable volume mount for containerDeploy set to 'no'
+| CDAF_ERROR_DIAG           | Dependency injected custom call if error occurs in [Execution Engine][mydoc_execution_engine]
 
 ### Image Registry
 
