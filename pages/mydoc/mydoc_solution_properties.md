@@ -32,8 +32,6 @@ See solution/CDAF.solution in CDAF automation directory.
 | defaultBranch             | Used to determine feature branch functionality, default is master
 | defaultEnvironment        | Default environment to use for [CDAF Feature Branch Environments post](https://blog.cdaf.io/posts/2022-02-20-feature-branch-environments/), defaults to DOCKER
 | processSequence           | Deployment Process Sequence, defaults to localTasks, remoteTasks and finally containerTasks
-| packageFeatures           | Reduce CAF helper scripts included in release package, value `minimal`. Defaults to `full`
-| packageMethod             | Windows only, use tar for release package construction, value `tarball`. Defaults to `zip`
 
 ## Environment Variable Substitution
 
