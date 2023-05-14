@@ -49,7 +49,7 @@ These properties are used to push the image created by imageBuild.
 | Variable                  | Description
 |---------------------------|------------
 | CDAF_REGISTRY_URL         | Image registry URL, example myregistry.local
-| CDAF_REGISTRY_TAG         | Image tab, exampple myregistry.local/group/mysolution:111
+| CDAF_REGISTRY_TAG         | Image tab, example myregistry.local/group/mysolution:111
 | CDAF_REGISTRY_USER        | Registry user, example registryuser
 | CDAF_REGISTRY_TOKEN       | Registry token, example xyzx9234sxsrwcqw34
 
