@@ -6,6 +6,6 @@ summary: VARCHK operation has been added to the execution engine to allow differ
 tags: [news]
 ---
 
-See [Variable Validation post](https://blog.cdaf.io/posts/2022-02-21-variable-validation/)
+See [Variable Validation Blog post](https://blog.cdaf.io/posts/2022-02-21-variable-validation/)
 
 {% include links.html %}

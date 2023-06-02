@@ -6,6 +6,6 @@ summary: Properties which are mapped to variables can now be directly defined as
 tags: [news]
 ---
 
-See [Resolve and Reveal post](https://blog.cdaf.io/posts/2022-05-02-resolve-and-reveal/)
+See [Resolve and Reveal Blog post](https://blog.cdaf.io/posts/2022-05-02-resolve-and-reveal/)
 
 {% include links.html %}

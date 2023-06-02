@@ -6,6 +6,6 @@ summary: containerDeploy, like containerBuild, is intended for self-hosted agent
 tags: [news]
 ---
 
-See [CDAF containerDeploy post](https://blog.cdaf.io/posts/2022-04-05-cdaf-containerdeploy/)
+See [CDAF containerDeploy Blog post](https://blog.cdaf.io/posts/2022-04-05-cdaf-containerdeploy/)
 
 {% include links.html %}

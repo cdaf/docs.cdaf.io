@@ -44,14 +44,32 @@ The following properties can be used in place of environment variables
 
 ### Image Registry
 
-These properties are used to push the image created by imageBuild.
+These properties are used to push the image created by dockerBuild to pull a base image from a private registry. These can be overriden by [Environment Variables][mydoc_environment_variables].
 
 | Variable                  | Description
 |---------------------------|------------
-| CDAF_REGISTRY_URL         | Image registry URL, example myregistry.local
-| CDAF_REGISTRY_TAG         | Image tab, example myregistry.local/group/mysolution:111
-| CDAF_REGISTRY_USER        | Registry user, example registryuser
+| CDAF_SKIP_PULL            | Skip updating of image
+| CDAF_PULL_REGISTRY_URL    | Image registry URL, example myregistry.local (do not set for dockerhub)
+| CDAF_PULL_REGISTRY_USER   | Registry user, example registryuser (if not set, default is '.')
+| CDAF_PULL_REGISTRY_TOKEN  | Registry token, example xyzx9234sxsrwcqw34
+
+These properties are used to push the image created by imageBuild to push to a private registry. These can be overriden by [Environment Variables][mydoc_environment_variables].
+
+| Variable                  | Description
+|---------------------------|------------
+| CDAF_REGISTRY_URL         | Image registry URL, example myregistry.local (do not set for dockerhub)
+| CDAF_REGISTRY_TAG         | Image tag(s), can being single value `latest` or list `latest ${BUILDNUMBER}` (default is `latest`)
+| CDAF_REGISTRY_USER        | Registry user, example registryuser (if not set, default is '.')
 | CDAF_REGISTRY_TOKEN       | Registry token, example xyzx9234sxsrwcqw34
+
+These properties are used to push the image created by dockerPush to push to a private registry. These can be overriden by [Environment Variables][mydoc_environment_variables].
+
+| Variable                  | Description
+|---------------------------|------------
+| CDAF_PUSH_REGISTRY_URL    | Image registry URL, example myregistry.local (do not set for dockerhub)
+| CDAF_PUSH_REGISTRY_TAG    | Image tag(s), can being single value `latest` or list `latest ${BUILDNUMBER}` (default is `latest`)
+| CDAF_PUSH_REGISTRY_USER   | Registry user, example registryuser (if not set, default is '.')
+| CDAF_PUSH_REGISTRY_TOKEN  | Registry token, example xyzx9234sxsrwcqw34
 
 ### Git Clean-up Properties
 
