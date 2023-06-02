@@ -12,6 +12,6 @@ start of applying consistent prioritised properties. The principle of applicatio
 - Environment Variables
 - Solution Properties
 
-See [Cascading Properties Blog post](https://blog.cdaf.io/posts/2023-06-02-cascading-properties/)
+See [Cascading Properties Blog post](https://blog.cdaf.io/posts/2023-06-01-cascading-properties/)
 
 {% include links.html %}
