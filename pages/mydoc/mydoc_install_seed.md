@@ -19,7 +19,20 @@ A key principle of the Continuous Delivery Automation Framework is loose couplin
 To seed a new solution, the minimal requirement is a directory with a solution file CDAF.solution
 
     mkdir .cdaf
-    cp ~/automation/solution/CDAF.solution .cdaf
+
+### Linux
+
+``` bash
+echo "solutionName=mycoolproduct" > .cdaf/CDAF.solution
+echo "artifactPrefix=0.1" >> .cdaf/CDAF.solution
+```
+
+### Windows
+
+``` powershell
+Set-Content .\.cdaf\CDAF.solution "solutionName=mycoolproduct"
+Add-Content .\.cdaf\CDAF.solution "artifactPrefix=0.1"
+```
 
 The minimum properties are the name of your solution, and the versioning prefix. The resulting artefact will have the build number appended to the release package, e.g. the first build will be 0.1.1, then 0.1.2 and so on. See [packaging][mydoc_basics_packaging].
 
@@ -39,30 +52,6 @@ or for windows
     ci
 
 Many things will happen, however the key observation is that a file called release.sh for linux or release.ps1 for windows will be produced, this is the build artefact that can be consumed by the Continuous Delivery (CD) stages. 
-
-### Continuous Delivery (CD)
-
-Run the artefact with an example environment, for linux
-
-    ./release.sh TEST
-
-or windows
-
-    ./release.ps1 TEST
-
-Again many things will happen, but because we have not defined any deployment tasks, it will simply report "no action taken".
-
-### CDAF Entry
-
-The default CDAF entry point can conditionally execute the CI & CD steps, i.e. both for feature branches but CI only for the default branch. For linux
-
-    entry.sh
-
-or windows
-
-    entry
-
-You will the same steps executed above, but with a wrapper, it is this wrapper that will be used to loosely couple your solution to you chosen CI/CD toolset.
 
 ## Shift-Left & Fail-Fast
 

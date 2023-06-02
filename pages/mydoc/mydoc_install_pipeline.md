@@ -179,6 +179,8 @@ For Azure DevOps/Server (formerly Visual Studio Team Services (VSTS)/Team Founda
       For re-release    : $(Release.DefinitionName)-$(Build.BuildNumber)-$(rev:r)
 ```
 
+As you progress through the next steps, push you changes to source control to progressively test your pipeline.
+
 > Next: [Configuration Management][mydoc_basics_configuration_management]
 
 {% include links.html %}

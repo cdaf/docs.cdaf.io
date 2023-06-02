@@ -13,6 +13,14 @@ folder: mydoc
 
 A key approach to support the principle of automation execution in a local desktop context, is the use of environment variables. It's important to remember that environment variables do not necessarily need to be persisted, i.e. stored unencrypted on disk, it's the global availability of the variable that makes it an environment variable.
 
+
+```
+context  target  databaseFQDN        dBpassword
+local    TEST    db1.nonprod.local   $DB1_PASSWORD
+local    UAT     db2.nonprod.local   $DB2_PASSWORD
+local    PROD    cluster.prod.local  $PRD_PASSWORD
+```
+
 # Variable Expansion
 
 Variables can be referenced in preoperties files (see [Configuration Management][mydoc_basics_configuration_management]) or CDAF.solution file and then expanded at deploy time into variables or files using ASSIGN, PROPLD or DETOKN in the [execution engine][mydoc_execution_engine].

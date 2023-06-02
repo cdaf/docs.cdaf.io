@@ -22,69 +22,44 @@ CDAF will process all build.tsk files in the solution root, then all the build.t
 
 The build.tsk files are processed line by line, each line is logged and then executed, with errors and exceptions trapped and logged. In the case of linux the error processing is based on the exit code and standard error, while windows has a broader range of errors, such as halt and exception conditions. 
 
-### A Simple Build Task
+For this material, the build output is a simple script, for some language specific examples see
 
-In this example, a Java build using Maven is performed. A complete reference for operations and built-in variables is available in the [execution engine][mydoc_execution_engine].
-
-All properties in your CDAF.solution are automatically loaded as variables when the task engine starts:
-
-``` properties
-archGroupID=co.ntier
-archArtID=spring-mvc-archetype
-archVersion=1.0.2
-```
-
-The output of this is placed in a temporary directory based on the solution name. The CDAF operation ``REMOVE`` is used to clean this temporary directory using the built-in variable, ``$SOLUTION``. Once clean, the Maven build is performed:
-
-``` bash
-REMOVE ${SOLUTION}
-
-mvn --batch-mode archetype:generate -D"archetypeGroupId=${archGroupID}" -D"archetypeArtifactId=${archArtID}" -D"archetypeVersion=${archVersion}" -D"groupId=io.cdaf.java" -D"artifactId=${SOLUTION}" -D"version=${artifactPrefix}"
-```
-
-### A More Complex Build Task
-
-In this example, a ASP.NET solution is build is being performed to create a Web Deploy package. The ``EXITIF`` operation allows the skipping of the build prcess if the built-in variable ``$ACTION`` has been set to ``clean``. In the CDAF.solution:
-
-``` properties
-productVersion=2.3
-```
-
-The ``MSTOOL`` operation loads the path to MSBuild.exe into environment variable ``$env:MS_BUILD``. The ``REPLAC`` operation detokenises static content file to inject the product version, which includes the built in ``$BUILDNUMBER``. Then the compile of the code and generation of Web Deploy (``/T:Package``) artefacts is performed:
-
-``` powershell
-REMOVE bin
-REMOVE obj
-
-Write-Host "If Action is clean only, then exit`n"
-EXITIF $ACTION -eq "clean"
-
-Write-Host "Combine to create symantic (http://semver.org/) version`n"
-ASSIGN $productVersion+='.'
-ASSIGN $productVersion+=$BUILDNUMBER
-
-MSTOOL
-
-Write-Host "PROJECT         : $($PROJECT)"
-Write-Host "`$productVersion : $productVersion`n"
-
-Write-Host "[$PROJECT] Apply product version as static content`n"
-REPLAC Views\Shared\_Layout.cshtml %productVersion% $productVersion
-
-Write-Host "[$PROJECT] Build Project ($PROJECT) with specific parameters for web deploy.`n"
-& "$env:MS_BUILD" $PROJECT.csproj /T:Package /P:Configuration=Release /p:buildNumber=$productVersion
-```
+- [ASP.NET Classic (MSBuild)](https://blog.cdaf.io/posts/2023-04-25-web-deploy/)
+- [Java Maven](https://blog.cdaf.io/posts/2023-04-25-maven/)
 
 ## Extend the Seeded Solution
 
-Based on the [seeded solution][mydoc_install_seed], add a build.tsk file to the solution root
+Based on the [configuration management][mydoc_basics_configuration_management], add a `build.tsk` file to the solution root.
+
+### Linux
 
 ``` bash
-echo "I'm a build artefact" > fake.artefact
-REFRSH fake.artefact output
+echo 'echo \"hash!/usr/bin/env bash\" > runtime.sh' > build.tsk
+echo 'echo \"echo Deploy %integer%, property set to : %property%\" >> runtime.sh' >> build.tsk
+echo 'hash=$(printf \"\\u0023\")' >> build.tsk
+echo 'REPLAC runtime.sh hash $hash' >> build.tsk
+echo 'REFRSH runtime.sh output' >> build.tsk
+echo 'chmod +x output/runtime.sh' >> build.tsk
 ```
 
-Push this to your pipeline and ensure it remains green.
+### Windows
+
+``` powershell
+Set-Content build.tsk 'Set-Content runtime.ps1 "Write-Host `"Deploy %integer%, property set to : %property%`""'
+Add-Content build.tsk 'REFRSH runtime.ps1 output'
+```
+
+### Continuous Integration (CI)
+
+The `build.tsk` is a CI task so only need to execute
+
+    ci.sh
+
+or for windows
+
+    ci
+
+The build process will now be triggered, this can be observed in the log `build.tsk found in solution root`, this will produce a directory called `output`, however, this will not be included in the release file, which will be covered in the next step
 
 > Next: [Packaging][mydoc_basics_packaging]
 

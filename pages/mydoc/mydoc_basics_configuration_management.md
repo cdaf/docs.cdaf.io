@@ -20,15 +20,52 @@ CDAF origin was to ensure consistent configuration of servers across environment
 To provide a human readable, single pane-of-glass view of the multiple environment configurations, a tabular approach is used. An example of this follows. The first two columns, context and target are mandatory, all others can be any values needed for your solution.
 
 ```
-context  target  databaseFQDN        dBpassword
-local    TEST    db1.nonprod.local   $db1Pass
-local    UAT     db2.nonprod.local   $db2Pass
-local    PROD    cluster.prod.local  $prodPass
+context  target  property
+local    TEST    test.server.comain
+local    PROD    production.server.domain
 ```
 
 > Configuration Management files should never container sensitive data or secrets. These are supplied as variables, see more on [sensitive data strategies][mydoc_sensitive_data_strategies].
 
 The configuration management tables can be any file name with .cm extension, in your solution root. All .cm files are processed prior to the [build task][mydoc_basics_build_tasks] in the CI process.
+
+## Extend the Seeded Solution
+
+Based on the [seeded solution][mydoc_install_seed], add a `properties.cm` file to the solution root.
+
+### Linux
+
+``` bash
+echo 'context  target  property               integer' > .cdaf/properties.cm
+echo 'local    LINUX   "Local Context"              1' >> .cdaf/properties.cm
+echo 'local    TEST    "Test Property"              2' >> .cdaf/properties.cm
+```
+
+### Windows
+
+``` powershell
+Set-Content .\.cdaf\properties.cm 'context  target     property               integer'
+Add-Content .\.cdaf\properties.cm 'local    WINDOWS    "Local Context"              1'
+Add-Content .\.cdaf\properties.cm 'local    WORKGROUP  "Local Context"              1'
+Add-Content .\.cdaf\properties.cm 'local    TEST       "Test Property"              2'
+```
+
+## Continuous Delivery Emulation (CD)
+
+Retest your solution, but this time, execute the end-to-end process
+
+    cdEmulate.sh
+
+or for windows
+
+    cdEmulate
+
+The resulting CD process will not perform any action, however, the release package will now be extracted and there will be a directory `TasksLocal`, and in this will be the sub-directory based on the property `context`, `propertiesForLocalTasks`. In this directory will be the two properties files, compiled from the `properties.cm` file, `TEST` and `PROD` respectively, e.g.
+
+``` properties
+property=Test Property
+integer=1
+```
 
 ## Tokenisation
 
@@ -72,6 +109,24 @@ dbopt:
 jdbcConnection=jdbc:mysql://%databaseFQDN%/javaapp
 jdbcDiver=com.mysql.jdbc.Driver
 ```
+
+### Ansible
+
+``` yaml
+---
+spring_fqdn: "%spring_fqdn%"
+rails_fqdn: "%rails_fqdn%"
+```
+
+### Helm Pod
+
+``` yaml
+env:
+  - name: QUEUE_TRANSPORT
+    value: "%QUEUE_TRANSPORT%"
+  - name: ORM_CONNECTION
+    value: "%ORM_CONNECTION%"
+---
 
 With the properties for the application defined, now it is time to build the application.
 
