@@ -1,7 +1,7 @@
 ---
 title: Training Refresh
 published: true
-permalink: 2023-04-25-resolve-and-reveal.html
+permalink: 2023-04-05-training-refresh.html
 summary: Providing both technology agnostic and specific guidance.
 tags: [news]
 ---
