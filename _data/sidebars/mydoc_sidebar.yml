@@ -96,6 +96,10 @@ entries:
     output: web
 
     folderitems:
+    - title: Configuration Mapping
+      url: /mydoc_configuration_mapping.html
+      output: web
+
     - title: Execution Engine
       url: /mydoc_execution_engine.html
       output: web
