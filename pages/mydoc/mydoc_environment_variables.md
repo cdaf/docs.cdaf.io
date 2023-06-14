@@ -18,7 +18,7 @@ The following environment variables are available
 | CDAF_BRANCH_NAME          | Used by entry.ps1/entry.sh <br/>Override the branch name, primarily to test CI behaviour for non-default branch, i.e. main
 | CDAF_CORE                 | CDAF helper script path
 | CDAF_DOCKER_REQUIRED      | [containerBuild][mydoc_container_build] will attempt to start Docker if not running and will fail if it cannot, rather than falling back to native execution
-| CDAF_DELIVERY             | The default target environment for cdEmulate.sh, defaults are <br/>LINUX, or<br/> WINDOWS for on-domain or WORKGROUP for off-domain
+| CDAF_DELIVERY             | The default target environment for cdEmulate and entry, defaults are <br/>LINUX, or<br/> WINDOWS for on-domain or WORKGROUP for off-domain
 | CDAF_ERROR_DIAG           | Dependency injected custom call if error occurs in [Execution Engine][mydoc_execution_engine]
 | CDAF_HOME_MOUNT           | to disable volume mount for containerDeploy set to 'no', note: this can be overridden a solution level, using CDAF_HOME_MOUNT as property
 | CDAF_IGNORE_WARNING       | If messages are logged to standard error, the [Execution Engine][mydoc_execution_engine] will log but not halt, however is this is set to yes, processing will halt <br/>yes or no, default is yes

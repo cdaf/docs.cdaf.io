@@ -13,21 +13,19 @@ This helper script supports the creation of docker images, and conditionally, th
 
 # Container Build Configuration
 
-To execute, define the containerBuild definition and runtimeImage (if not supplied, containerImage will be used) to **CDAF.solution**. Note: complete definitions are provided in the GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/imageBuild) and [Linux](https://github.com/cdaf/linux/tree/master/samples/imageBuild).
+To execute, define the buildImage definition. Note: complete definitions are provided in the GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/imageBuild) and [Linux](https://github.com/cdaf/linux/tree/master/samples/imageBuild).
 
 ## Windows
 
-    constructor=TasksLocal
-    imageBuild=& $AUTOMATIONROOT/remote/imageBuild.ps1 ${SOLUTION}_${REVISION} ${BUILDNUMBER} $runtimeImage $constructor
-    runtimeImage=mcr.microsoft.com/windows/servercore/iis
+    buildImage=cdaf/windows
 
 ## Linux
 
-    constructor=TasksLocal
-    imageBuild=$AUTOMATIONROOT/remote/imageBuild.sh ${SOLUTION}_${REVISION} ${BUILDNUMBER} $runtimeImage $constructor
-    runtimeImage=nginx
+    buildImage=cdaf/linux
 
-If the constructor is not supplied, a image will be built for each directory in the current working directory.
+## Immutable Deploy in Construction
+
+If a custom docker file is not supplied, the default dockerfile will execute the IMMUTABLE release in the image construction process.
 
 # Registry Push
 
@@ -45,6 +43,8 @@ Or for another registry provider or a self-hosted registry
     CDAF_REGISTRY_USER=pat
     CDAF_REGISTRY_TOKEN=${ACCESS_TOKEN}
 
-> See GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/imageBuild) and [Linux](https://github.com/cdaf/linux/tree/master/samples/imageBuild) dockerfile and additional properties.
+# Custom Image & Process
+
+For samples of more complex usage see the GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/imageBuild-custom-image) and [Linux](https://github.com/cdaf/linux/tree/master/samples/imageBuild-custom-image) dockerfile and additional properties.
 
 {% include links.html %}

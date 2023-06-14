@@ -1,7 +1,7 @@
 ---
 title: Solution Properties
 tags: [feature_configuration]
-keywords: solutionName, productName, artifactPrefix, productVersion, containerBuild, containerImage, containerDeploy, imageBuild, runtimeImage, constructor, defaultBranch, defaultEnvironment, processSequence, CDAF_HOME_MOUNT, CDAF_ERROR_DIAG, CDAF_SKIP_PULL, CDAF_PULL_REGISTRY_URL, CDAF_PULL_REGISTRY_USER, CDAF_PULL_REGISTRY_TOKEN, CDAF_REGISTRY_URL, CDAF_REGISTRY_TAG, CDAF_REGISTRY_USER, CDAF_REGISTRY_TOKEN, CDAF_PULL_REGISTRY_URL, CDAF_PULL_REGISTRY_TAG, CDAF_PULL_REGISTRY_USER, CDAF_PULL_REGISTRY_TOKEN, gitRemoteURL, gitUserNameEnvVar, gitUserPassEnvVar, gitCustomCleanup
+keywords: solutionName, productName, artifactPrefix, productVersion, containerBuild, containerImage, containerDeploy, imageBuild, runtimeImage, constructor, defaultBranch, defaultEnvironment, processSequence, CDAF_HOME_MOUNT, CDAF_ERROR_DIAG, CDAF_DOCKER_REQUIRED, CDAF_SKIP_PULL, CDAF_PULL_REGISTRY_URL, CDAF_PULL_REGISTRY_USER, CDAF_PULL_REGISTRY_TOKEN, CDAF_REGISTRY_URL, CDAF_REGISTRY_TAG, CDAF_REGISTRY_USER, CDAF_REGISTRY_TOKEN, CDAF_PULL_REGISTRY_URL, CDAF_PULL_REGISTRY_TAG, CDAF_PULL_REGISTRY_USER, CDAF_PULL_REGISTRY_TOKEN, gitRemoteURL, gitUserNameEnvVar, gitUserPassEnvVar, gitCustomCleanup
 last_updated: May 4, 2022
 summary: CDAF Configuration Properties.
 sidebar: mydoc_sidebar
@@ -41,6 +41,7 @@ The following properties can be used in place of environment variables
 |---------------------------|------------
 | CDAF_HOME_MOUNT           | to disable volume mount for containerDeploy set to 'no'
 | CDAF_ERROR_DIAG           | Dependency injected custom call if error occurs in [Execution Engine][mydoc_execution_engine]
+| CDAF_DOCKER_REQUIRED      | [containerBuild][mydoc_container_build] will attempt to start Docker if not running and will fail if it cannot, rather than falling back to native execution
 
 ### Image Registry
 
