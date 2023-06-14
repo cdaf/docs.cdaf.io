@@ -112,6 +112,10 @@ entries:
       url: /mydoc_solution_properties.html
       output: web
 
+    - title: Extended Processes
+      url: /mydoc_extended_processes.html
+      output: web
+
     - title: Sensitive Data Strategies
       url: /mydoc_sensitive_data_strategies.html
       output: web

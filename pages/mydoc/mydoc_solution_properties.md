@@ -83,6 +83,6 @@ To clean-up Git branches and docker images, the following properties are used.
 | gitUserPassEnvVar         | secret-pat
 | gitCustomCleanup          | & $AUTOMATIONROOT/buildandpackage/clean.ps1 or $AUTOMATIONROOT/buildandpackage/clean.sh
 
-> Next: [Sensitive Data Strategies][mydoc_sensitive_data_strategies]
+> Next: [Extended Processes][mydoc_extended_processes]
 
 {% include links.html %}
