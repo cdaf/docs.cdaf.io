@@ -9,14 +9,15 @@ permalink: mydoc_environment_variables.html
 folder: mydoc
 ---
 
+Due to inconsistencies between Windows and Linux handling of environment variables, these have been divided between environment variables that are set before calling an entry script to alter the behaviour of CDAF, and environment variables that are set within bash scripts to make the globally available.
+
 ## Control Variables
 
-The following environment variables are available
+The following environment variables are available to control the behaviour of CDAF
 
 | Variable                  | Description
 |---------------------------|------------
 | CDAF_BRANCH_NAME          | Used by entry.ps1/entry.sh <br/>Override the branch name, primarily to test CI behaviour for non-default branch, i.e. main
-| CDAF_CORE                 | CDAF helper script path
 | CDAF_DOCKER_REQUIRED      | [containerBuild][mydoc_container_build] will attempt to start Docker if not running and will fail if it cannot, rather than falling back to native execution
 | CDAF_DELIVERY             | The default target environment for cdEmulate and entry, defaults are <br/>LINUX, or<br/> WINDOWS for on-domain or WORKGROUP for off-domain
 | CDAF_ERROR_DIAG           | Dependency injected custom call if error occurs in [Execution Engine][mydoc_execution_engine]
@@ -28,6 +29,14 @@ The following environment variables are available
 | CDAF_CB_{variable_name}   | Prefix used in [containerBuild][mydoc_container_build] to supply local variables into the build time container
 | CDAF_CD_{variable_name}   | Prefix used in [containerDeploy][mydoc_container_deploy] to supply local variables into the deploy time container
 | CDAF_IB_{variable_name}   | Prefix used in [containerBuild][mydoc_image_build] to supply during image construction
+
+## Global Variables
+
+These variables are available to child scripts, custom scripts and [task execution engine][mydoc_execution_engine], see also Build-time Variables.
+
+| Variable                  | Description
+|---------------------------|------------
+| CDAF_CORE                 | CDAF helper script path
 
 ## Image Registry
 
