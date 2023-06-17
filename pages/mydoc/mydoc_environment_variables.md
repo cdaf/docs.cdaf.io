@@ -9,7 +9,7 @@ permalink: mydoc_environment_variables.html
 folder: mydoc
 ---
 
-Due to inconsistencies between Windows and Linux handling of environment variables, these have been divided between environment variables that are set before calling an entry script to alter the behaviour of CDAF, and environment variables that are set within bash scripts to make the globally available.
+Due to inconsistencies between Windows and Linux handling of environment variables, these have been divided between environment variables that are set before calling an entry script to alter the behaviour of CDAF, and environment variables that are set within bash scripts to make them globally available.
 
 ## Control Variables
 
