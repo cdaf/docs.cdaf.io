@@ -21,15 +21,17 @@ The containerBuild option allows the execution of the build process from within 
 
 To execute the build within a container, add the containerBuild definition and containerImage to **CDAF.solution**. Note: complete definitions are provided in the GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/containerBuild) and [Linux](https://github.com/cdaf/linux/tree/master/samples/containerBuild).
 
+> The following samples have the default process commented out, and can be used to define a custom process.
+
 ## Windows
 
-    containerBuild=& ${AUTOMATIONROOT}/processor/containerBuild.ps1 $SOLUTION $BUILDNUMBER $REVISION $ACTION
-    containerImage=mcr.microsoft.com/windows/server:ltsc2022
+    containerImage=cdaf/windows
+    # containerBuild=& ${AUTOMATIONROOT}/processor/containerBuild.ps1 $SOLUTION $BUILDNUMBER $REVISION $ACTION
 
 ## Linux
 
-    containerBuild=$AUTOMATIONROOT/processor/containerBuild.sh $SOLUTION $BUILDNUMBER $REVISION $ACTION
-    containerImage=ubuntu:20.04
+    containerImage=cdaf/linux
+    # containerBuild=$AUTOMATIONROOT/processor/containerBuild.sh $SOLUTION $BUILDNUMBER $REVISION $ACTION
 
 ## Build Time Variables
 

@@ -22,15 +22,17 @@ The containerDeploy option allows the execution of the deploy process from withi
 
 To execute the deploy within a container, add the containerDeploy definition and runtimeImage (if not supplied, containerImage will be used) to **CDAF.solution**. Note: complete definitions are provided in the GitHub samples for [Windows](hhttps://github.com/cdaf/windows/tree/master/samples/containerDeploy) and [Linux](https://github.com/cdaf/linux/tree/master/samples/containerDeploy).
 
+> The following samples have the default process commented out, and can be used to define a custom process.
+
 ## Windows
 
-    containerDeploy=& ${WORK_DIR_DEFAULT}/containerDeploy.ps1 "${TARGET}" "${RELEASE}" "${SOLUTION}" "${BUILDNUMBER}" "${REVISION}" -imageDir cli
-    runtimeImage=mcr.microsoft.com/windows/server:ltsc2022
+    runtimeImage=cdaf/windows
+    # containerDeploy=& ${WORK_DIR_DEFAULT}/containerDeploy.ps1 "${TARGET}" "${RELEASE}" "${SOLUTION}" "${BUILDNUMBER}" "${REVISION}" -imageDir cli
 
 ## Linux
 
-    containerDeploy=${WORK_DIR_DEFAULT}/containerDeploy.sh "${TARGET}" "${RELEASE}" "${SOLUTION}" "${BUILDNUMBER}" "${REVISION}" cli
-    containerImage=ubuntu:20.04
+    containerImage=cdaf/linux
+    # containerDeploy=${WORK_DIR_DEFAULT}/containerDeploy.sh "${TARGET}" "${RELEASE}" "${SOLUTION}" "${BUILDNUMBER}" "${REVISION}" cli
 
 ## Deploy Time Variables
 

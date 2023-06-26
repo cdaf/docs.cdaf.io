@@ -15,13 +15,17 @@ This helper script supports the creation of docker images, and conditionally, th
 
 To execute, define the buildImage definition. Note: complete definitions are provided in the GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/imageBuild) and [Linux](https://github.com/cdaf/linux/tree/master/samples/imageBuild).
 
+> The following samples have the default process commented out, and can be used to define a custom process.
+
 ## Windows
 
     buildImage=cdaf/windows
+    # imageBuild=& "$AUTOMATIONROOT/remote/imageBuild.ps1" ${SOLUTION}_${REVISION} ${BUILDNUMBER}
 
 ## Linux
 
     buildImage=cdaf/linux
+    # imageBuild="$AUTOMATIONROOT/remote/imageBuild.sh" ${SOLUTION}_${REVISION} ${BUILDNUMBER}
 
 ## Immutable Deploy in Construction
 
