@@ -52,6 +52,13 @@ The following operations are provided to simplify common tasks.
 |         | &nbsp;&nbsp;&nbsp;Variable validation using names file                       | VARCHK vars.properties
 | VECOPY  | Verbose copy                                                 | VECOPY *.war
 
+Notes on EXCREM use, the properties are similar to those used for remote tasks, where the minimum required is the host, if other properties are not used, must be set to NOT_SUPPLIED, i.e.
+
+    deployHost=localhost
+    remUser=NOT_SUPPLIED
+    remCred=NOT_SUPPLIED
+    remThb=NOT_SUPPLIED
+
 #### Windows only
 
 The following operations are only available in PowerShell version
@@ -60,13 +67,6 @@ The following operations are only available in PowerShell version
 | --------|-----------------------------------|---------------------------------|
 | CMDTST  | Returns true if command exists    | CMDTST vagrant                  |
 | ELEVAT  | Execute as elevated NT SYSTEM     | ELEVAT "$(pwd)/custom.ps1"      |
-
-Notes on EXCREM use, the properties are similar to those used for remote tasks, where the minimum required is the host, if other properties are not used, must be set to NOT_SUPPLIED, i.e.
-
-  deployHost=localhost
-  remUser=NOT_SUPPLIED
-  remCred=NOT_SUPPLIED
-  remThb=NOT_SUPPLIED
 
 # Build-time Variables
 
