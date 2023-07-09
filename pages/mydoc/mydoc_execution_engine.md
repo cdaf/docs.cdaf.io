@@ -1,7 +1,7 @@
 ---
 title: Execution Engine
 tags: [feature_configuration]
-keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, PROPLD, REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
+keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
 last_updated: May 5, 2022
 summary: Line-by-line Execution.
 sidebar: mydoc_sidebar
@@ -20,35 +20,37 @@ In all places using .tsk files, i.e. build, package, wrap and deploy. The follow
 
 The following operations are provided to simplify common tasks.
 
-| Keyword | Description                                                | Example
-| --------|------------------------------------------------------------|--------
-| ASSIGN  | Display, and expand as necessary, variable assignment      | ASSIGN $test="$varcontainingvar"
-| CMPRSS  | Compress directory to file                                 | CMPRSS packageName dirName
-| DCMPRS  | Decompress package file                                    | DCMPRS packageName
-| DECRYP  | decrypt using private_key.pem                              | DECRYP crypt/encrypt.dat
-|         | decrypt using AES key                                      | DECRYP crypt/encrypt.dat $key
-| DETOKN  | Detokenise file with target prop                           | DETOKN token.yml
-|         | Detokenise with specific file                              | DETOKN token.yml PROP_FILE
-|         | Detokenise with encrypted file                             | DETOKN token.yml crypt/FIL $key
-|         | Expand and reveal embedded variables and detokenise        | DETOKN token.yml $TARGET reveal
-|         | Expand but do not reveal embedded variables and detokenise | DETOKN token.yml manifest.txt resolve
-| EXCREM  | Execute command                                            | EXCREM hostname
-|         | Execute script                                             | EXCREM ./capabilities.sh
-| EXITIF  | Exit normally if argument set                              | EXITIF $ACTION
-|         | Exit normally if set to value                              | EXITIF $ACTION clean
-| IMGTXT  | Display image file as text (wrapper for jp2a in Linux)     | IMGTXT sample.jpg               |
-| INVOKE  | call a custom script                                       | INVOKE ./script "Hello"
-| MAKDIR  | Create a directory and path (opt)                          | MAKDIR directory/and/path
-| MASKED  | Return an uppercase hexadecimal checksum using SHA256      | MASKED $password
-| MD5MSK  | Deprecated. Return an uppercase hexadecimal checksum       | MD5MSK $password
-| PROPLD  | Load properties as variables                               | PROPLD PROP_FILE
-|         | Expand and reveal embedded variables                       | PROPLD $TARGET reveal
-|         | Expand but do not reveal embedded variables                | PROPLD manifest.txt resolve
-| REMOVE  | Delete files, including wildcard                           | REMOVE *.war
-| REPLAC  | Replace token in file                                      | REPLAC fileName %token% $value
-| VARCHK  | Variable validation using default file properties.varchk   | VARCHK
-|         | Variable validation using names file                       | VARCHK vars.properties
-| VECOPY  | Verbose copy                                               | VECOPY *.war
+| Keyword | Description                                                  | Example
+| --------|--------------------------------------------------------------|--------
+| ASSIGN  | Display, and expand as necessary, variable assignment        | ASSIGN $test="$varcontainingvar"
+| CMPRSS  | Compress directory to file                                   | CMPRSS packageName dirName
+| DCMPRS  | Decompress package file                                      | DCMPRS packageName
+| DECRYP  | decrypt using private_key.pem                                | DECRYP crypt/encrypt.dat
+|         | &nbsp;&nbsp;&nbsp;decrypt using AES key                                      | DECRYP crypt/encrypt.dat $key
+| DETOKN  | Detokenise file with target prop                             | DETOKN token.yml
+|         | &nbsp;&nbsp;&nbsp;Detokenise with specific file                              | DETOKN token.yml PROP_FILE
+|         | &nbsp;&nbsp;&nbsp;Detokenise with encrypted file                             | DETOKN token.yml crypt/FIL $key
+|         | &nbsp;&nbsp;&nbsp;Expand and reveal embedded variables and detokenise        | DETOKN token.yml $TARGET reveal
+|         | &nbsp;&nbsp;&nbsp;Expand but do not reveal embedded variables and detokenise | DETOKN token.yml manifest.txt resolve
+| EXCREM  |   Execute command                                            | EXCREM hostname
+|         | &nbsp;&nbsp;&nbsp;Execute script                                             | EXCREM ./capabilities.sh
+| EXITIF  | Exit normally if argument set                                | EXITIF $ACTION
+|         | &nbsp;&nbsp;&nbsp;Exit normally if set to value                              | EXITIF $ACTION clean
+| IMGTXT  | Display image file as text (wrapper for jp2a in Linux)       | IMGTXT sample.jpg               |
+| INVOKE  | call a custom script                                         | INVOKE ./script "Hello"
+| MAKDIR  | Create a directory and path (opt)                            | MAKDIR directory/and/path
+| MASKED  | Return an uppercase hexadecimal checksum using SHA256        | MASKED $password
+| MD5MSK  | Deprecated. Return an uppercase hexadecimal checksum         | MD5MSK $password
+| PROPLD  | Load properties as variables                                 | PROPLD PROP_FILE
+|         | &nbsp;&nbsp;&nbsp;Expand and reveal embedded variables                       | PROPLD $TARGET reveal
+|         | &nbsp;&nbsp;&nbsp;Expand but do not reveal embedded variables                | PROPLD manifest.txt resolve
+| REFRSH  | Refresh directory contents                                   | REFRSH manifest.txt ~/temp_dir
+|         | &nbsp;&nbsp;&nbsp;clear directory contents (create if not existing)          | REFRSH ~/temp_dir
+| REMOVE  | Delete files, including wildcard                             | REMOVE *.war
+| REPLAC  | Replace token in file                                        | REPLAC fileName %token% $value
+| VARCHK  | Variable validation using default file properties.varchk     | VARCHK
+|         | &nbsp;&nbsp;&nbsp;Variable validation using names file                       | VARCHK vars.properties
+| VECOPY  | Verbose copy                                                 | VECOPY *.war
 
 #### Windows only
 
