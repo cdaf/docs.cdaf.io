@@ -25,17 +25,17 @@ The following operations are provided to simplify common tasks.
 | ASSIGN  | Display, and expand as necessary, variable assignment        | ASSIGN $test="$varcontainingvar"
 | CMPRSS  | Compress directory to file                                   | CMPRSS packageName dirName
 | DCMPRS  | Decompress package file                                      | DCMPRS packageName
-| DECRYP  | decrypt using private_key.pem                                | DECRYP crypt/encrypt.dat
-|         | &nbsp;&nbsp;&nbsp;decrypt using AES key                                      | DECRYP crypt/encrypt.dat $key
+| DECRYP  | decrypt using private key (PKI)                              | DECRYP crypt/encrypt.dat
+|         | &nbsp;&nbsp;&nbsp;decrypt using AES/GPG key                  | DECRYP crypt/encrypt.dat $key
 | DETOKN  | Detokenise file with target prop                             | DETOKN token.yml
-|         | &nbsp;&nbsp;&nbsp;Detokenise with specific file                              | DETOKN token.yml PROP_FILE
-|         | &nbsp;&nbsp;&nbsp;Detokenise with encrypted file                             | DETOKN token.yml crypt/FIL $key
+|         | &nbsp;&nbsp;&nbsp;Detokenise with specific file              | DETOKN token.yml PROP_FILE
+|         | &nbsp;&nbsp;&nbsp;Detokenise with encrypted file             | DETOKN token.yml crypt/FIL $key
 |         | &nbsp;&nbsp;&nbsp;Expand and reveal embedded variables and detokenise        | DETOKN token.yml $TARGET reveal
 |         | &nbsp;&nbsp;&nbsp;Expand but do not reveal embedded variables and detokenise | DETOKN token.yml manifest.txt resolve
 | EXCREM  |   Execute command                                            | EXCREM hostname
-|         | &nbsp;&nbsp;&nbsp;Execute script                                             | EXCREM ./capabilities.sh
+|         | &nbsp;&nbsp;&nbsp;Execute script                             | EXCREM ./capabilities.sh
 | EXITIF  | Exit normally if argument set                                | EXITIF $ACTION
-|         | &nbsp;&nbsp;&nbsp;Exit normally if set to value                              | EXITIF $ACTION clean
+|         | &nbsp;&nbsp;&nbsp;Exit normally if set to value              | EXITIF $ACTION clean
 | IMGTXT  | Display image file as text (wrapper for jp2a in Linux)       | IMGTXT sample.jpg               |
 | INVOKE  | call a custom script                                         | INVOKE ./script "Hello"
 | MAKDIR  | Create a directory and path (opt)                            | MAKDIR directory/and/path
