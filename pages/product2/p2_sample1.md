@@ -1,5 +1,5 @@
 ---
-title: Sample 1 Topic
+title: Install Vagrant
 keywords: sample
 summary: "This is just a sample topic..."
 sidebar: product2_sidebar

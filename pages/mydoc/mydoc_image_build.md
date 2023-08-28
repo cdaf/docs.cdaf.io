@@ -1,7 +1,7 @@
 ---
 title: imageBuild
 tags: [containers, tasks]
-keywords: containers, tasks, oci
+keywords: containers, tasks, oci, CDAF_REGISTRY_URL, CDAF_REGISTRY_TAG, CDAF_REGISTRY_USER, CDAF_REGISTRY_TOKEN
 last_updated: May 15, 2022
 summary: Build one or Docker images from either a named directory or the current working directory 
 sidebar: mydoc_sidebar

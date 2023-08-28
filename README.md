@@ -28,8 +28,6 @@ Download the Ruby+DevKit from http://rubyinstaller.org/downloads/ and run the ri
 
 ## Install Dependencies and run Locally
 
-Do not run sudo
-
     gem install bundler
 
 > Do not run from WSL windows mount or the auto-detect will not work.

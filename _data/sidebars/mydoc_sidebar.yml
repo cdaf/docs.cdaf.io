@@ -144,6 +144,10 @@ entries:
       url: /mydoc_container_deploy.html
       output: web
 
+    - title: dockerPush
+      url: /mydoc_docker_push.html
+      output: web
+
     - title: CDAF Images
       url: /mydoc_cdaf_images.html
       output: web
