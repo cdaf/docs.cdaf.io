@@ -8,7 +8,7 @@ permalink: p2_vagrant.html
 
 ## Vagrant Boxes
 
-Vagrant box images available here https://app.vagrantup.com/cdaf are build initially for Hyper-V using AtlasBase.ps1. This is cloned in VirtualBox and then both images are prepared using AtlasImage.ps1. Finally the images are packaged on the Hyper-V and VirtualBox hosts using AtlasPackage.ps1. The resulting .box files are uploaded to Vagrantup.
+Vagrant box images available here [https://app.vagrantup.com/cdaf](https://app.vagrantup.com/cdaf) are build initially for Hyper-V using AtlasBase.ps1. This is cloned in VirtualBox and then both images are prepared using AtlasImage.ps1. Finally the images are packaged on the Hyper-V and VirtualBox hosts using AtlasPackage.ps1. The resulting .box files are uploaded to Vagrantup.
 
 ### Related Material
 

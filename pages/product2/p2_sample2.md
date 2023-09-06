@@ -1,14 +1,10 @@
 ---
-title: Run Vagrant
+title: Vagrant on Linux
 keywords: sample
-summary: "This is just a sample topic..."
+summary: Vagrant with Oracle VirtualBox
 sidebar: product2_sidebar
 permalink: p2_sample2.html
 ---
-
-## Vagrant
-
-Vagrant and Oracle VirtualBox or Microsoft Hyper-V
 
 ### Create Desktop Build Server
 

@@ -35,11 +35,11 @@ entries:
       url: /p2_vagrant.html
       output: web, pdf
 
-    - title: Sample 1
+    - title: Vagrant on Windows
       url: /p2_sample1.html
       output: web, pdf
 
-    - title: Sample 2
+    - title: Vagrant on Linux
       url: /p2_sample2.html
       output: web, pdf
 
@@ -47,11 +47,11 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Sample 3
+    - title: Docker on Windows
       url: /p2_sample3.html
       output: web, pdf
 
-    - title: Sample 4
+    - title: Docker on Linux
       url: /p2_sample4.html
       output: web, pdf
 

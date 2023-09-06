@@ -1,14 +1,10 @@
 ---
-title: Install Vagrant
+title: Vagrant on Windows
 keywords: sample
-summary: "This is just a sample topic..."
+summary: Vagrant with Oracle VirtualBox or Microsoft Hyper-V
 sidebar: product2_sidebar
 permalink: p2_sample1.html
 ---
-
-## Sample Content
-
-Vagrant and Oracle VirtualBox or Microsoft Hyper-V
 
 ## VirtualBox
 
