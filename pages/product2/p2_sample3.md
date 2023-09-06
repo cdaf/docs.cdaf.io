@@ -8,7 +8,7 @@ permalink: p2_sample3.html
 
 # docker-desktop
 
-Typically Combined for working with Linux containers, not required for Windows containers.
+Typically Combined with Windows Subsystem for Linux (WSL) for working with Linux containers, not required for Windows containers.
 
 ```
 Dism /online /enable-feature /all /featurename:Microsoft-Hyper-V /NoRestart
@@ -30,6 +30,8 @@ Native Windows Containers can only run the same version as the host operating sy
 ```
 
 # CDAF Image for Windows Server 2022
+
+Get latest image
 
     docker pull cdaf/windows
 
