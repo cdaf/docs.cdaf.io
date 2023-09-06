@@ -8,7 +8,7 @@ permalink: p2_sample1.html
 
 # Vagrant
 
-CDAF Vagrant boxes support VirtualBox and Hyper-V. Previously Hyper-V on a workstation did not have a native NAT network support, however, it now does, making it more functionally equivalent to VirtualBox. Using Administrator PowerShell session
+CDAF Vagrant boxes support VirtualBox and Hyper-V. Previously Hyper-V on a workstation did not have a native NAT network support, however, it now does, making it more functionally equivalent to VirtualBox. Using Administrator PowerShell session.
 
     . { iwr -useb https://raw.githubusercontent.com/cdaf/windows/master/install.ps1 } | iex
     ./automation/provisioning/base.ps1 vagrant
