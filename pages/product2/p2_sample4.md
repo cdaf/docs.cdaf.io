@@ -10,10 +10,8 @@ permalink: p2_sample4.html
 
 Native Linux Containers can run different distributions from the host.
 
-```
-curl -s https://raw.githubusercontent.com/cdaf/linux/master/install.sh | bash -
-./automation/provisioning/installDocker.sh
-```
+    curl -s https://raw.githubusercontent.com/cdaf/linux/master/install.sh | bash -
+    ./automation/provisioning/installDocker.sh
 
 > Note: for Redhat Enterprise Linux Podman & Buildah are installed by default and is largely Docker compatible.
 
@@ -78,6 +76,5 @@ Agent in named Pool with agent name (useful to recycle the container and replace
 Deployment Group
 
     docker run -d cdaf/linux-ado-agent /solution/register-and-run.sh $ORG_URL $GROUP_TOKEN project@deployment-group linux-target-1
-
 
 {% include links.html %}

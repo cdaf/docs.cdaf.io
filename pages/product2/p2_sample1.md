@@ -6,11 +6,18 @@ sidebar: product2_sidebar
 permalink: p2_sample1.html
 ---
 
+# Vagrant
+
+CDAF Vagrant boxes support VirtualBox and Hyper-V. Previously Hyper-V on a workstation did not have a native NAT network support, however, it now does, making it more functionally equivalent to VirtualBox. Using Administrator PowerShell session
+
+    . { iwr -useb https://raw.githubusercontent.com/cdaf/windows/master/install.ps1 } | iex
+    ./automation/provisioning/base.ps1 vagrant
+
 ## VirtualBox
 
-Oracle VirtualBox and Vagrant
+Oracle VirtualBox
 
-Note: on Windows Server 2012 R2 need to manually install x86 (not 64 bit) C++ Redistributable.
+    ./automation/provisioning/base.ps1 virtualbox
 
 ## Hyper-V
 
@@ -56,18 +63,5 @@ If change made that need to be checked in, clean the workspace:
 Once finished with the environment, destroy using:
 
     vagrant destroy -f
-    
-# Vagrant Boxes
-
-Vagrant box images available here https://app.vagrantup.com/cdaf are build initially for Hyper-V using AtlasBase.ps1. This is cloned in VirtualBox and then both images are prepared using AtlasImage.ps1. Finally the images are packaged on the Hyper-V and VirtualBox hosts using AtlasPackage.ps1. The resulting .box files are uploaded to Vagrantup.
-
-## Related Material
-
-The following links have contributed to the construction of the Atlas scripts
-
- * https://www.vagrantup.com/docs/virtualbox/boxes.html
- * http://www.hurryupandwait.io/blog/in-search-of-a-light-weight-windows-vagrant-box
- * http://huestones.co.uk/node/305
- * https://stackoverflow.com/questions/39469452/installing-removed-windows-features/46985832#46985832
 
 {% include links.html %}

@@ -24,10 +24,8 @@ shutdown /r /t 0
 
 Native Windows Containers can only run the same version as the host operating system, e.g. Windows Server 2019 Container cannot be run on Windows Server 2022 host, or vice versa.
 
-```
-. { iwr -useb https://raw.githubusercontent.com/cdaf/windows/master/install.ps1 } | iex
-./automation/provisioning/installDocker.ps1
-```
+    . { iwr -useb https://raw.githubusercontent.com/cdaf/windows/master/install.ps1 } | iex
+    ./automation/provisioning/installDocker.ps1
 
 # CDAF Image for Windows Server 2022
 
