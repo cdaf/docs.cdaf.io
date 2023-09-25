@@ -1,7 +1,7 @@
 ---
 title: Cascading Properties
 published: true
-permalink: 2023-06-01-packageFeatures-and-packageMethod.html
+permalink: 2023-06-01-cascading-properties.html
 summary: Environment, Solution and Function Properties.
 tags: [news]
 ---
