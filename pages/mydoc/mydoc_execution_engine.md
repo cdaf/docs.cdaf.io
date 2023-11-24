@@ -1,7 +1,7 @@
 ---
 title: Execution Engine
 tags: [feature_configuration]
-keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
+keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, MSTOOL, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
 last_updated: May 5, 2022
 summary: Line-by-line Execution.
 sidebar: mydoc_sidebar
@@ -67,6 +67,7 @@ The following operations are only available in PowerShell version
 | --------|-----------------------------------|---------------------------------|
 | CMDTST  | Returns true if command exists    | CMDTST vagrant                  |
 | ELEVAT  | Execute as elevated NT SYSTEM     | ELEVAT "$(pwd)/custom.ps1"      |
+| MSTOOL  | Microsoft Build Tools, set environment variables <br/> • MS_BUILD <br/> • MS_TEST <br/> • VS_TEST <br/> • DEV_ENV <br/> • NUGET_PATH | MSTOOL                          |
 
 # Build-time Variables
 
@@ -84,3 +85,6 @@ These are automatically set at execution start-up
 > Next: [Solution Properties][mydoc_solution_properties]
 
 {% include links.html %}
+
+This e-mail, including attachments, may contain information which is confidential and subject to copyright. If you are not the intended recipient, please notify the sender by return e-mail or telephone (0800 800 181) and delete this e-mail and any attachments from your system. E-mail communications are not secure and are not guaranteed by Southern Cross Medical Care Society (Southern Cross) to be free of unauthorised interference, error or virus. Anyone who communicates with us by e-mail is taken to accept this risk. Anything in this email which does not relate to the official business of Southern Cross is neither given nor endorsed by Southern Cross. 
+Information Classification: General/Internal
