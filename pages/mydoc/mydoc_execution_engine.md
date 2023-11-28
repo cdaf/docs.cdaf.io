@@ -1,7 +1,7 @@
 ---
 title: Execution Engine
 tags: [feature_configuration]
-keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, MSTOOL, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
+keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXERTY, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, MSTOOL, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
 last_updated: May 5, 2022
 summary: Line-by-line Execution.
 sidebar: mydoc_sidebar
@@ -34,6 +34,8 @@ The following operations are provided to simplify common tasks.
 |         | &nbsp;&nbsp;&nbsp;Expand but do not reveal embedded variables and detokenise | DETOKN token.yml manifest.txt resolve
 | EXCREM  |   Execute command                                            | EXCREM hostname
 |         | &nbsp;&nbsp;&nbsp;Execute script                             | EXCREM ./capabilities.sh
+| EXERTY  | Execute Retry, wait 10 seconds and retry twice               | EXERTY "temperamentalcommand"
+|         | &nbsp;&nbsp;&nbsp;Optional, wait and retry override          | EXERTY "verytemperamentalcommand" 20 5
 | EXITIF  | Exit normally if argument set                                | EXITIF $ACTION
 |         | &nbsp;&nbsp;&nbsp;Exit normally if set to value              | EXITIF $ACTION clean
 | IMGTXT  | Display image file as text (wrapper for jp2a in Linux)       | IMGTXT sample.jpg               |
