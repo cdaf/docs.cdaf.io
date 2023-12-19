@@ -72,16 +72,16 @@ entries:
     output: web
 
     folderitems:
-    - title: Configuration Management
-      url: /mydoc_basics_configuration_management.html
-      output: web
-
     - title: Build Tasks
       url: /mydoc_basics_build_tasks.html
       output: web
 
     - title: Packaging
       url: /mydoc_basics_packaging.html
+      output: web
+
+    - title: Configuration Management
+      url: /mydoc_basics_configuration_management.html
       output: web
 
     - title: Local Tasks

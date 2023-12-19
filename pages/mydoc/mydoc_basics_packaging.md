@@ -84,6 +84,6 @@ Other directories within your solution directory which will also be automaticall
 
 An explanation of the local and container extensions will be explained in following sections.
 
-> Next: [Local Tasks][mydoc_basics_local_tasks]
+> Next: [Configuration Management][mydoc_basics_configuration_management]
 
 {% include links.html %}

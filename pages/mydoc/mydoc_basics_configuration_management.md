@@ -130,6 +130,6 @@ env:
 
 With the properties for the application defined, now it is time to build the application.
 
-> Next: [build tasks][mydoc_basics_build_tasks]
+> Next: [Local Tasks][mydoc_basics_local_tasks]
 
 {% include links.html %}
