@@ -84,6 +84,8 @@ These are automatically set at execution start-up
 | $TMPDIR         | Automatically set to the temp dir
 | $WORKSPACE      | The working directory at execution start-up
 
+See also [Environment and Global Variables][mydoc_environment_variables].
+
 > Next: [Solution Properties][mydoc_solution_properties]
 
 {% include links.html %}

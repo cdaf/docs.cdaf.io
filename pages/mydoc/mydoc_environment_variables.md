@@ -1,7 +1,7 @@
 ---
 title: Environment Variables
 tags: [feature_configuration]
-keywords: CDAF_BRANCH_NAME, CDAF_DOCKER_REQUIRED, CDAF_DELIVERY, CDAF_ERROR_DIAG, CDAF_HOME_MOUNT, CDAF_IGNORE_WARNING, CDAF_OVERRIDE_TOKEN, CDAF_SKIP_CONTAINER_BUILD, CONTAINER_IMAGE, CDAF_CB_, CDAF_CD_
+keywords: CDAF_BRANCH_NAME, CDAF_DOCKER_REQUIRED, CDAF_DELIVERY, CDAF_ERROR_DIAG, CDAF_HOME_MOUNT, CDAF_IGNORE_WARNING, CDAF_OVERRIDE_TOKEN, CDAF_SKIP_CONTAINER_BUILD, CONTAINER_IMAGE, CDAF_CB_, CDAF_CD_, global
 last_updated: May 4, 2022
 summary: CDAF Control Variables.
 sidebar: mydoc_sidebar
@@ -37,6 +37,9 @@ These variables are available to child scripts, custom scripts and [task executi
 | Variable                  | Description
 |---------------------------|------------
 | CDAF_CORE                 | CDAF helper script path
+| WORKSPACE_ROOT            | Static for solution, WORKSPACE will change for project (build) or target (deploy)
+
+See also [Build-time Variables][mydoc_execution_engine].
 
 ## Image Registry
 
