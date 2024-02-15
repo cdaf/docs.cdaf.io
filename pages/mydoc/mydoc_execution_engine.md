@@ -1,7 +1,7 @@
 ---
 title: Execution Engine
 tags: [feature_configuration]
-keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXERTY, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, MSTOOL, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
+keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXERTY, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, MSTOOL, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, EXECMD, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
 last_updated: May 5, 2022
 summary: Line-by-line Execution.
 sidebar: mydoc_sidebar
@@ -69,6 +69,7 @@ The following operations are only available in PowerShell version
 | --------|-----------------------------------|---------------------------------|
 | CMDTST  | Returns true if command exists    | CMDTST vagrant                  |
 | ELEVAT  | Execute as elevated NT SYSTEM     | ELEVAT "$(pwd)/custom.ps1"      |
+| EXECMD  | Execute in Command (CMD) shell    | ELEVAT "terraform $OPT_ARG"     |
 | MSTOOL  | Microsoft Build Tools, set environment variables <br/> • MS_BUILD <br/> • MS_TEST <br/> • VS_TEST <br/> • DEV_ENV <br/> • NUGET_PATH | MSTOOL                          |
 
 # Build-time Variables
