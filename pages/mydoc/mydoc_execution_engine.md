@@ -82,7 +82,7 @@ These are automatically set at execution start-up
 | $SOLUTIONROOT   | The solution directory identified by CDAF.solution file
 | $BUILDNUMBER    | The first argument passed, if not passed, this is generated
 | $ACTION         | The second argument passed, has some hardcoded functions<br/> • clean: only remove temp files<br/> • packageonly: skip any build tasks
-| $TARGET         | At build time, this is derived (Can be overridden, see [CDAF_BUILD_ENV environment variable][mydoc_environment_variables]) <br/> • Linux: Set to WSL for Windows Subsystem, otherwise LINUX <br/> • Windows: Set to WINDOWS is on-domain, otherwise WORKGROUP <br/> For deployment, this is supplied as an argument.
+| $TARGET         | At build time, this is derived (Can be overridden, see [CDAF_BUILD_ENV environment variable][mydoc_environment_variables]) <br/> • Linux: Set to WSL for Windows Subsystem, otherwise LINUX <br/> • Windows: Set to WINDOWS is on-domain, otherwise WORKGROUP
 | $TMPDIR         | Automatically set to the temp dir
 | $WORKSPACE      | The working directory at execution start-up
 
@@ -93,7 +93,7 @@ See also [Environment and Global Variables][mydoc_environment_variables].
 | Variable        | Description
 |-----------------|----------------------------------
 | $ENVIRONMENT    | This is the first argument passed to the release, the targets are derived from this
-| $TARGET         | All targets are processed based on based on pattern match $ENVIRONMENT*, the TARGET being currently executed is set in this variable
+| $TARGET         | All targets are processed based on pattern match $ENVIRONMENT*, the TARGET being currently executed is set in this variable
 
 > Next: [Solution Properties][mydoc_solution_properties]
 
