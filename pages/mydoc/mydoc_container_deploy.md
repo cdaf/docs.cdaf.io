@@ -1,7 +1,7 @@
 ---
 title: containerDeploy
 tags: [containers, tasks]
-keywords: containers, tasks
+keywords: containers, tasks, runtimeFiles
 last_updated: May 15, 2022
 summary: Perform a Deployment Task from within a Container
 sidebar: mydoc_sidebar
@@ -39,5 +39,21 @@ To execute the deploy within a container, add the containerDeploy definition and
 To supply variables to the build process, prefix with *CDAF_CD_* (see [CDAF Environment Variables][mydoc_environment_variables]) and the variables will be mapped into the build container.
 
 > See GitHub samples for [Windows](https://github.com/cdaf/windows/tree/master/samples/containerDeploy) and [Linux](https://github.com/cdaf/linux/tree/master/samples/containerDeploy) for dockerfile and additional properties.
+
+# Custom Image
+
+The default directory used for container deploy is _containerDeploy_, if this is not found, the default `Dockerfile` is used, with the default runtime files. If you have your own `Dockerfile` in _containerDeploy_, or a custom directory specified in `CDAF.solution` _containerDeploy_ property, then that will be used.
+
+# Runtime Files
+
+The release.sh file is included in the default image, however, if using a default image, this needs to be explicitly defined in `CDAF.solution` _runtimeFiles_ property. This can be a space separated list of files.
+
+    runtimeFiles=$WORKSPACE_ROOT/release.sh
+
+# Runtime Retain
+
+To skip image clean-up, set `CDAF.solution` _runtimeRetain_ property.
+
+    runtimeRetain=yes
 
 {% include links.html %}

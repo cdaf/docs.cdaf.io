@@ -1,7 +1,7 @@
 ---
 title: Execution Engine
 tags: [feature_configuration]
-keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXERTY, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, MSTOOL, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, EXECMD, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE
+keywords: ASSIGN, CMPRSS, DCMPRS, DECRYP, DETOKN, EXCREM, EXERTY, EXITIF, INVOKE, MAKDIR, MASKED, MD5MSK, MSTOOL, PROPLD, REFRSH; REMOVE, REPLAC, VARCHK, VECOPY, CMDTST, ELEVAT, EXECMD, IMGTXT, AUTOMATIONROOT, SOLUTIONROOT, SOLUTION, BUILDNUMBER, ACTION, TMPDIR, WORKSPACE, CDAF_CORE, TASK_NAME, TARGET, ENVIRONMENT, RELEASE, OPT_ARG
 last_updated: May 5, 2022
 summary: Line-by-line Execution.
 sidebar: mydoc_sidebar
@@ -72,15 +72,26 @@ The following operations are only available in PowerShell version
 | EXECMD  | Execute in Command (CMD) shell    | ELEVAT "terraform $OPT_ARG"     |
 | MSTOOL  | Microsoft Build Tools, set environment variables <br/> • MS_BUILD <br/> • MS_TEST <br/> • VS_TEST <br/> • DEV_ENV <br/> • NUGET_PATH | MSTOOL                          |
 
+# Common Variables
+
+These are automatically set at both build and deploy time.
+
+| Variable        | Description
+|-----------------|----------------------------------
+| $SOLUTIONROOT   | The solution directory identified by localtion of CDAF.solution file
+| $SOLUTION       | The solution name identified by property in CDAF.solution file
+| $BUILDNUMBER    | The first argument passed for CI, and propagated to CD
+| $CDAF_CORE      | Core CDAF runtime location
+| $TASK_NAME      | The name of the task file currently executing
+| $TARGET         | Available in both build and deploy, but derived differently, see below for details
+
 # Build-time Variables
 
 These are automatically set at execution start-up
 
 | Variable        | Description
 |-----------------|----------------------------------
-| $AUTOMATIONROOT | The directory of the Continuous Delivery Automation Framework
-| $SOLUTIONROOT   | The solution directory identified by CDAF.solution file
-| $BUILDNUMBER    | The first argument passed, if not passed, this is generated
+| $AUTOMATIONROOT | The installation directory of the Continuous Delivery Automation Framework
 | $ACTION         | The second argument passed, has some hardcoded functions<br/> • clean: only remove temp files<br/> • packageonly: skip any build tasks
 | $TARGET         | At build time, this is derived (Can be overridden, see [CDAF_BUILD_ENV environment variable][mydoc_environment_variables]) <br/> • Linux: Set to WSL for Windows Subsystem, otherwise LINUX <br/> • Windows: Set to WINDOWS is on-domain, otherwise WORKGROUP
 | $TMPDIR         | Automatically set to the temp dir
@@ -94,6 +105,8 @@ See also [Environment and Global Variables][mydoc_environment_variables].
 |-----------------|----------------------------------
 | $ENVIRONMENT    | This is the first argument passed to the release, the targets are derived from this
 | $TARGET         | All targets are processed based on pattern match $ENVIRONMENT*, the TARGET being currently executed is set in this variable
+| $RELEASE        | Second argument passed to release
+| $OPT_ARG        | Third argument passed to release
 
 > Next: [Solution Properties][mydoc_solution_properties]
 
