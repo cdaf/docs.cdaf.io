@@ -26,6 +26,8 @@ topnav_dropdowns:
       folderitems:
         - title: CDAF Publication
           external_url: https://cdaf.io
+        - title: CDAF Training
+          external_url: https://learn.cdaf.io
         - title: CDAF Blog
           external_url: https://blog.cdaf.io
         - title: CDAF Docs (This Site)

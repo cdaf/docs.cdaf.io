@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: CDAF
-  version: 2.7.7
+  version: 2.7.8
   folders:
 
   - title:
@@ -114,6 +114,10 @@ entries:
 
     - title: Extended Processes
       url: /mydoc_extended_processes.html
+      output: web
+
+    - title: Feature Branch Execution
+      url: /mydoc_feature_branch_execution.html
       output: web
 
     - title: Sensitive Data Strategies
