@@ -1,5 +1,5 @@
 ---
-title: Getting started with the Continuous Delivery Automation Framework
+title: Getting started with CDAF
 keywords: cdaf
 tags: [getting_started]
 sidebar: mydoc_sidebar
